@@ -1,17 +1,19 @@
 import React, { Component } from 'react';
-import './App.css';
+import './Styles/styles.css'
+import Navbar from './Components/navbar';
+
 
 class App extends Component {
-  constructor(props){
-    super(props)
-  }
+
   render() {
     return (
       <div className="App">
-        <nav className="App-header">
-
-
-        </nav>
+        <header className="App-header">
+          <Navbar />
+        </header>
+        <div>
+          <img alt="background-image" src=""></img>
+        </div>
       </div>
     );
   }
