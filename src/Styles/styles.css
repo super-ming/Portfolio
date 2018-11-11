@@ -1,0 +1,33 @@
+body {
+  background-color: #343a40;
+}
+
+.nav {
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+}
+
+.navbar {
+  height: 80px;
+}
+
+.navbar-brand h1 {
+  margin-left: 15px;
+}
+
+.nav-link h5 {
+  margin: 0 15px 0 0;
+}
+
+@keyframes slide-down {
+  from {
+    margin-top: -100%;
+    height: 300%;
+  }
+
+  to {
+    margin-top: 0%;
+    height: 100%;
+  }
+}
