@@ -8,7 +8,7 @@ const Footer = (props) => {
     //<i className="material-icons">menu</i>
   //</IconButton>
   return (
-    <Navbar className="navbar justify-content-center" fixed="bottom" bg="dark" variant="dark" expand="lg">
+    <Navbar className="navbar justify-content-center" bg="light" variant="dark" expand="lg">
         <Nav className="social-icons" justify="true">
           <Nav.Link href="https://github.com/super-ming"><Github /></Nav.Link>
           <Nav.Link href="https://www.linkedin.com/in/mingyho"><LinkedIn fill="#0077B5"/></Nav.Link>
