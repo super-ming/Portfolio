@@ -10,7 +10,7 @@ class Menu extends Component {
         {title: "Feed Reader", src:"https://super-ming.github.io/frontend-nanodegree-feedreader/", text:"For this project, I used HTML, CSS, and JavaScript to create an application that provides a live feed of pages from Udacity."},
         {title: "Frogger Game", src:"https://super-ming.github.io/frontend-nanodegree-arcade-game/", text:"This is a classic arcade game in which the user controls the character at the bottom of the screen and tries to reach the river without touching an enemy bug. In the unfortunate event of touching a bug, the character goes back to his/her original position and have to start all over again. The calculations of the movement and timing was done with JavaScript"},
         {title: "Memory Card Game", src:"https://super-ming.github.io/Memory-Card/", text:"This is a classic memory game, in which the user clicks on a card to flip it over and the timer is activated. When the player flips another card and the icons on both cards are a match, the background color of the cards changes and the icon rotates. When there is no match, the cards closes and the thumbs up icon temporarily rotates to become a thumbs down icon. The player's score and rating is determined by the time spent and number of moves needed to complete the game. The player starts with three stars. One star is removed as the player spends more time and effort on the game."},
-        {title: "More...", src:"#"}
+        {title: "More...", src:"https://super-ming.github.io/Cat-Clicker/"}
       ],
       activeProject: [],
       key: 0
@@ -36,7 +36,7 @@ class Menu extends Component {
               <Tab
                 eventKey={index}
                 key={index}
-                title={projects[index].title}/>
+                title={projects[index].title} />
             ))}
           </Tabs>
         </div>
