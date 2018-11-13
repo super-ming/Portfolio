@@ -118,17 +118,9 @@ span {
   margin-left: 15px;
 }
 
-.projectEmbed {
-  overflow: hidden;
-  overflow-x: hidden;
-  overflow-y: hidden;
-  height: 100%;
-  width: 60%;
-  position: relative;
-  top: 0px;
-  left: 0px;
-  right: 0px;
-  bottom: 0px;
+.project-thumbnail {
+  width: 300px;
+  height: 300px;
 }
 
 .social-icons a svg {

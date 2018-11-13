@@ -47,10 +47,9 @@ class Menu extends Component {
         <div class="jumbo-wrapper">
           <Jumbotron>
             <Media className="d-flex justify-content-between mediaGroup">
-              <iframe className="projectEmbed"
-                title="projects"
-                src={projects[activeKey].src}
-                frameBorder="0" />
+              <img className="project-thumbnail"
+                alt={projects[activeKey].title}
+                src={projects[activeKey].src} />
               <Media.Body className="text">
                 <h5>{projects[activeKey].title}</h5>
                 <p className="text">{projects[activeKey].text}</p>
