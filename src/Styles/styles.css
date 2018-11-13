@@ -60,7 +60,7 @@ span {
 
 .main-section {
   padding-top: 20px;
-  background-color: #03384a;
+  background-color: #0789b6;
 }
 
 .about-me {
@@ -68,11 +68,13 @@ span {
   padding: 20px;
   width: 80%;
   color: white;
+  background-color: #076db1;
 }
 
 .about-me h3 {
   width: 100%;
   padding-top: 55px;
+  text-shadow: 2px 2px 4px #000000;
 }
 
 .line {
@@ -86,6 +88,8 @@ span {
   justify-content: center;
   margin: 30px;
   color: white;
+  padding-top: 30px;
+  text-shadow: 2px 2px 4px #000000;
 }
 
 .jumbotron {
@@ -95,6 +99,14 @@ span {
 
 .project-bar {
   width: 100%;
+}
+
+.project-bar a {
+  color: white;
+}
+
+.project-bar a:hover{
+  color: #5fee07;
 }
 
 .mediaGroup {

@@ -8,10 +8,10 @@ const NavBar = (props) => {
       <div className="nav d-flex ml-auto navlink">
         <Nav>
           <NavItem>
-            <Nav.Link><h5>Portfolio</h5></Nav.Link>
+            <Nav.Link href="#projects"><h5>Projects</h5></Nav.Link>
           </NavItem>
           <NavItem>
-            <Nav.Link><h5>Blog</h5></Nav.Link>
+            <Nav.Link href="https://medium.com/@superming"><h5>Blog</h5></Nav.Link>
           </NavItem>
           <NavItem>
             <Nav.Link href="#about-me"><h5>About</h5></Nav.Link>
