@@ -11,7 +11,8 @@ const aboutMe = (props) => {
           <h3>About Me</h3>
           <p>
           Hi! I'm a web developer from Seattle. I began my programming journey in Jan 2018 and it has been quite a ride!
-          I love learning about new things. Take a look at my projects below!
+          I love learning about new things. You can also ask me anything travel related as I enjoy travelling and new experiences.
+          Take a look at my projects below!
           </p>
         </Media.Body>
       </Media>
