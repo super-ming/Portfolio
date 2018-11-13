@@ -58,9 +58,43 @@ span {
   }
 }
 
+.main-section {
+  padding-top: 20px;
+  background-color: #03384a;
+}
+
+.about-me {
+  margin: 0 6% 0 10%;
+  padding: 20px;
+  width: 80%;
+  color: white;
+}
+
+.about-me h3 {
+  width: 100%;
+  padding-top: 55px;
+}
+
+.line {
+  width: 85%;
+  margin-top: 25px;
+  background-color: #f0f448;
+}
+
+.projects {
+  display: flex;
+  justify-content: center;
+  margin: 30px;
+  color: white;
+}
+
 .jumbotron {
   height: 850px;
   padding: 10px;
+}
+
+.project-bar {
+  width: 100%;
 }
 
 .mediaGroup {

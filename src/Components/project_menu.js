@@ -26,6 +26,9 @@ class Menu extends Component {
     let activeKey = this.state.key;
     return(
       <div>
+        <div className="projects">
+          <h3>Projects</h3>
+        </div>
         <div className="d-flex justify-content-center">
           <Tabs
             className="project-bar"
@@ -40,7 +43,7 @@ class Menu extends Component {
             ))}
           </Tabs>
         </div>
-        <div>
+        <div class="jumbo-wrapper">
           <Jumbotron>
             <Media className="d-flex justify-content-between mediaGroup">
               <iframe className="projectEmbed"
