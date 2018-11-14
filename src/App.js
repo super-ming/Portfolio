@@ -4,6 +4,7 @@ import Navbar from './Components/navbar';
 import Footer from './Components/footer';
 import Menu from './Components/project_menu';
 import AboutMe from './Components/aboutme';
+import Photo from './Assets/Images/ming.jpg'
 
 
 class App extends Component {
@@ -21,13 +22,11 @@ class App extends Component {
           <span />
         </section>
         <main className="main-section">
+          <img src={Photo} alt="Ming Ho" className="profile-photo"/>
           <AboutMe />
           <hr className="line"></hr>
           <Menu></Menu>
         </main>
-        <footer className="footer">
-          <Footer />
-        </footer>
       </div>
     );
   }
