@@ -63,6 +63,7 @@ class Menu extends Component {
               </Media.Body>
             </Media>
           </Jumbotron>
+          <a href="https://www.freepik.com/free-photos-vectors/background">Background vector created by Kjpargeter - Freepik.com</a>
         </div>
       </div>
     )
