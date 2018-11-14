@@ -8,13 +8,13 @@ const NavBar = (props) => {
       <div className="nav d-flex ml-auto navlink">
         <Nav>
           <NavItem>
-            <Nav.Link href="#projects"><h5>Projects</h5></Nav.Link>
+            <Nav.Link className="project-nav" href="#projects"><h5>Projects</h5></Nav.Link>
           </NavItem>
           <NavItem>
-            <Nav.Link href="https://medium.com/@superming"><h5>Blog</h5></Nav.Link>
+            <Nav.Link className="blog" href="https://medium.com/@superming"><h5>Blog</h5></Nav.Link>
           </NavItem>
           <NavItem>
-            <Nav.Link href="#about-me"><h5>About</h5></Nav.Link>
+            <Nav.Link className="about" href="#about-me"><h5>About</h5></Nav.Link>
           </NavItem>
         </Nav>
       </div>

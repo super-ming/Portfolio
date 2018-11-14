@@ -15,12 +15,28 @@
   margin: 0 15px 0 0;
   color: white;
   text-shadow: 2px 2px 4px #000000;
-  animation: bounce 2s;
+}
+
+.project-nav {
+  animation: slide-top 3s;
+}
+
+.blog {
+  animation: slide-top 3.5s;
+}
+
+.about{
+  animation: slide-top 4s;
 }
 
 @keyframes bounce {
-  0%, 50%, 100% {transform: translateY(0);}
+  0%, 50%, 100% {transform: translateY(-15px);}
   25%, 75% {transform: translateY(15px);}
+}
+
+@keyframes slide-top {
+  0% {transform: translateY(-1000px); opacity: 0;}
+  100% {transform: translateY(0); opacity: 1}
 }
 
 .intro {
@@ -67,7 +83,7 @@ intro, h2 {
   margin-left: 20%;
   z-index: 1;
   position: absolute;
-  top: 65%;
+  top: 68%;
 }
 
 .main-section {
