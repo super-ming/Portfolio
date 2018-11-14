@@ -30,7 +30,7 @@
 
 intro, h2 {
   width: 100%;
-  border-bottom: 2px solid #000;
+  border-bottom: 2px solid #04b163;
   animation: fadeIn 2.25s;
 
 }
@@ -38,7 +38,7 @@ intro, h2 {
 span {
   height: 41px;
   width: 1px;
-  border-bottom:2px solid #000;
+  border-bottom:2px solid #04b163;
   animation: increase 2s, fadeIn 2.25s;
   animation-fill-mode: forwards;
 }
@@ -58,20 +58,31 @@ span {
   }
 }
 
+.profile-photo {
+  margin-left: 20%;
+  z-index: 1;
+  position: absolute;
+  top: 60%;
+}
+
 .main-section {
-  padding-top: 20px;
+  padding-top: 100px;
   background-color: #0789b6;
+  background-image: url('../Assets/Images/green_background.jpg')
 }
 
 .about-me {
-  margin: 0 6% 0 10%;
-  padding: 20px;
   width: 80%;
+}
+
+.about-me-body {
+  margin: 0 6% 0 40%;
+  padding: 20px 20px 20px 10rem;
   color: white;
   background-color: #076db1;
 }
 
-.about-me h3 {
+.about-me-body h3 {
   width: 100%;
   padding-top: 55px;
   text-shadow: 2px 2px 4px #000000;
@@ -80,21 +91,26 @@ span {
 .line {
   width: 85%;
   margin-top: 25px;
-  background-color: #f0f448;
+  background-color: #2945a7;
 }
 
 .projects {
   display: flex;
   justify-content: center;
   margin: 30px;
-  color: white;
+  color: #28b688;
   padding-top: 30px;
-  text-shadow: 2px 2px 4px #000000;
+  text-shadow: 5px 4px 8px #787878;
+}
+
+.jumobo-wrapper > div {
+  margin-bottom: 0px;
+  padding: 10px;
+  background-color: #076db1;
 }
 
 .jumbotron {
-  height: 700px;
-  padding: 10px;
+  height: 670px;
 }
 
 .project-bar {
@@ -102,20 +118,23 @@ span {
 }
 
 .project-bar a {
-  color: white;
+  color: #11794a;
 }
 
 .project-bar a:hover{
-  color: #5fee07;
+  color: #de3553;
 }
 
 .mediaGroup {
   height: 100%;
+  background-color: #076db1;
+  padding: 20px;
+  color: white;
 }
 
 .text {
-  width: 100%;
-  margin-left: 15px;
+  width: 80%;
+  margin: 30px 0 0 55px;
 }
 
 .project-thumbnail {
@@ -124,8 +143,10 @@ span {
 }
 
 .social-icons a svg {
+  margin-top: 20px;
   width: 40px;
   height: 40px;
+  margin-right: 20px;
 }
 
 @keyframes slide-down {
