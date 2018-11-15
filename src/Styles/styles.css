@@ -1,4 +1,4 @@
-.navbar {
+.header-navbar {
   height: 80px;
   background-color: transparent;
 }
@@ -11,22 +11,26 @@
   text-shadow: 2px 2px 4px #000000;
 }
 
-.nav-link h5 {
+.nav-item, .nav-item h5 {
   margin: 0 15px 0 0;
   color: white;
   text-shadow: 2px 2px 4px #000000;
 }
 
+.nav-item a {
+  padding-top: 0;
+}
+
 .project-nav {
-  animation: slide-top 3s;
+  animation: slide-top 2.25s;
 }
 
 .blog {
-  animation: slide-top 3.5s;
+  animation: slide-top 2.5s;
 }
 
 .about{
-  animation: slide-top 4s;
+  animation: slide-top 2.75s;
 }
 
 @keyframes bounce {
@@ -44,10 +48,11 @@
   background-repeat: no-repeat;
   background-size: cover;
   width: 100%;
-  height: 450px;
+  height: 650px;
   top: 80px;
   color: white;
   text-shadow: 2px 2px 4px #000000;
+
 }
 
 intro, h2 {
@@ -57,7 +62,7 @@ intro, h2 {
 }
 
 .underline {
-  height: 41px;
+  height: 40px;
   width: 1px;
   border-bottom:2px solid #04b163;
   animation: increase 2s, fadeIn 2.25s;
@@ -79,26 +84,39 @@ intro, h2 {
   }
 }
 
+.arrow-wrapper {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.arrow-down {
+  height: 40px;
+  width: 40px;
+  animation: bounce 2s linear 0s infinite normal ;
+}
+
 .profile-photo {
   margin-left: 20%;
   z-index: 1;
   position: absolute;
-  top: 68%;
+  top: 110%;
 }
 
 .main-section {
-  padding-top: 100px;
+  padding-top: 50px;
   background-color: #0789b6;
-  background-image: url('../Assets/Images/green_background.jpg')
+  background-image: url('../Assets/Images/green_background.jpg');
 }
 
 .about-me {
-  width: 80%;
+  width: 85%;
+  padding-top: 200px;
 }
 
 .about-me-body {
   margin: 0 6% 0 40%;
-  padding: 20px 20px 20px 10rem;
+  padding: 20px 45px 20px 10rem;
   color: white;
   background-color: #076db1;
 }
@@ -111,7 +129,7 @@ intro, h2 {
 
 .line {
   width: 85%;
-  margin-top: 25px;
+  margin-top: 75px;
   background-color: #2945a7;
 }
 
@@ -119,9 +137,9 @@ intro, h2 {
   display: flex;
   justify-content: center;
   margin: 30px;
-  color: #28b688;
+  color: white;
   padding-top: 30px;
-  text-shadow: 5px 4px 8px #787878;
+  text-shadow: 5px 4px 8px #000;
 }
 
 .jumbo-wrapper > div {
@@ -138,16 +156,17 @@ intro, h2 {
   height: 620px;
 }
 
-.project-bar {
+.project-tabs {
   width: 100%;
   font-size: 18px;
 }
 
-.project-bar a {
-  color: #11794a;
+.project-tabs a {
+  color: #0f0dff;
+  text-shadow: 5px 4px 8px #888888;
 }
 
-.project-bar a:hover{
+.project-tabs a:hover{
   color: #de3553;
 }
 
@@ -158,24 +177,20 @@ intro, h2 {
   color: white;
 }
 
-.text {
+.project-text {
   width: 80%;
   margin: 30px 0 0 55px;
+  padding: 10px;
+}
+
+.project-text h4 {
+  margin-bottom: 20px;
+  text-shadow: 5px 4px 8px #000;
 }
 
 .project-thumbnail {
   width: 600px;
   height: 500px;
-}
-
-.social-icons a svg {
-  margin: 20px 20px 20px 0;
-  width: 40px;
-  height: 40px;
-}
-
-.social-icons svg:hover {
-  fill: white;
 }
 
 @keyframes slide-down {
@@ -188,4 +203,60 @@ intro, h2 {
     margin-top: 0%;
     height: 100%;
   }
+}
+
+.inactive-project {
+  animation: slide-left 1s;
+}
+
+.active-project {
+  animation: slide-right 1s;
+}
+
+@keyframes slide-left {
+  0% {opacity: 1;}
+  100% {transform: translateX(-1000px); opacity: 0;}
+}
+
+@keyframes slide-right {
+  0% {opacity: 0; transform: translateX(-500px);}
+  100% {transform: translateX(0); opacity: 1;}
+}
+
+.tool-icons svg {
+  margin: 20px 20px 20px 0;
+  width: 40px;
+  height: 40px;
+}
+
+.social-icons svg {
+  margin: 20px 20px 20px 0;
+  width: 40px;
+  height: 40px;
+}
+.social-icons a:last-child {
+  color: white;
+}
+
+.react-icon {
+  background-color: black;
+  fill: #61DAFB;
+}
+
+.js-icon {
+  background-color: black;
+  fill: #F7DF1E
+}
+
+.html-icon {
+  fill: #E34F26;
+  background-color: white;
+}
+
+.css-icon {
+  fill: white;
+}
+
+.attribution {
+  left: 0;
 }
