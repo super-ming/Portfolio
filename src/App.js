@@ -3,8 +3,12 @@ import './Styles/styles.css'
 import Navbar from './Components/navbar';
 import Menu from './Components/project_menu';
 import AboutMe from './Components/aboutme';
+import Footer from './Components/footer';
 import Photo from './Assets/Images/ming.jpg';
 import SplitText from 'react-pose-text';
+import AOS from 'aos';
+import 'aos/dist/aos.css';
+import { ReactComponent as ArrowDown } from './Assets/Icons/arrowdown.svg';
 
 const charPoses = {
 exit: { opacity: 0, y: 20 },
@@ -15,12 +19,20 @@ enter: {
 }};
 
 class App extends Component {
-
+  componentDidMount() {
+    this.arrowDown.addEventListener('click', ()=> {
+      window.scroll({
+        top: 750,
+        left: 0,
+        behavior: 'smooth'
+      });
+    });
+  }
   render() {
     return (
       <div className="App">
         <nav className="App-header">
-          <Navbar className="navbar" />
+          <Navbar className="header-navbar" />
         </nav>
         <section className="d-flex justify-content-center align-items-center intro">
           <h2 className="mb-0">
@@ -31,11 +43,17 @@ class App extends Component {
           <span className="underline"/>
         </section>
         <main className="main-section">
-          <img src={Photo} alt="Ming Ho" className="profile-photo"/>
+          <div className="arrow-wrapper" ref={(ref)=> this.arrowDown = ref}>
+            <ArrowDown className="arrow-down"/>
+          </div>
+          <img src={Photo} alt="Ming Ho" className="profile-photo" data-aos="fade-up" data-aos-offset="400" data-aos-duration="1000"/>
           <AboutMe />
           <hr className="line"></hr>
           <Menu></Menu>
         </main>
+        <footer>
+          <Footer></Footer>
+        </footer>
       </div>
     );
   }
