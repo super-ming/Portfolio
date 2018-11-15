@@ -107,6 +107,7 @@ intro, h2 {
   padding-top: 50px;
   background-color: #0789b6;
   background-image: url('../Assets/Images/green_background.jpg');
+  background-size: contain;
 }
 
 .about-me {
@@ -130,7 +131,7 @@ intro, h2 {
 .line {
   width: 85%;
   margin-top: 75px;
-  background-color: #2945a7;
+  background-color: white;
 }
 
 .projects {
@@ -145,7 +146,7 @@ intro, h2 {
 .jumbo-wrapper > div {
   margin-bottom: 0px;
   padding: 10px;
-  background-color: #076db1;
+  background-color: #cfcfcf;
 }
 
 .jumbo-wrapper > a {
@@ -162,7 +163,7 @@ intro, h2 {
 }
 
 .project-tabs a {
-  color: #0f0dff;
+  color: #672f63;
   text-shadow: 5px 4px 8px #888888;
 }
 
@@ -172,9 +173,8 @@ intro, h2 {
 
 .mediaGroup {
   height: 100%;
-  background-color: #076db1;
   padding: 50px 20px 20px 20px;
-  color: white;
+  color: black;
 }
 
 .project-text {
@@ -185,12 +185,20 @@ intro, h2 {
 
 .project-text h4 {
   margin-bottom: 20px;
-  text-shadow: 5px 4px 8px #000;
+  text-shadow: 5px 4px 8px white;
+}
+
+.laptop {
+  z-index: 1;
+  position: absolute;
+  width: 650px;
 }
 
 .project-thumbnail {
-  width: 600px;
-  height: 500px;
+  width: 500px;
+  height: 350px;
+  margin-left: 75px;
+  margin-top: 30px;
 }
 
 @keyframes slide-down {
@@ -230,10 +238,11 @@ intro, h2 {
 }
 
 .social-icons svg {
-  margin: 20px 20px 20px 0;
+  margin: 0 20px 0 0;
   width: 40px;
   height: 40px;
 }
+
 .social-icons a:last-child {
   color: white;
 }
@@ -255,8 +264,5 @@ intro, h2 {
 
 .css-icon {
   fill: white;
-}
-
-.attribution {
-  left: 0;
+  background-color: #076db1;
 }

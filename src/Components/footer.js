@@ -9,7 +9,7 @@ const email = <svg alt="Email" id="i-mail" viewBox="0 0 32 32" width="32" height
 
 const Footer = (props) => {
   return (
-    <Navbar className="justify-content-center" bg="light" variant="light" expand="lg">
+    <Navbar className="justify-content-center footer" bg="light" variant="light" expand="lg">
         <div className="attribution" >
           <a href="https://www.freepik.com/free-photos-vectors/background">Background vector created by Kjpargeter - Freepik.com</a>
         </div>
