@@ -100,7 +100,7 @@ intro, h2 {
   margin-left: 20%;
   z-index: 1;
   position: absolute;
-  top: 120%;
+  top: 115%;
 }
 
 .main-section {
@@ -154,7 +154,7 @@ intro, h2 {
 }
 
 .jumbotron {
-  height: 620px;
+  height: 580px;
 }
 
 .project-tabs {

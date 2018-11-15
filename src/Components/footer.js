@@ -4,7 +4,7 @@ import { ReactComponent as Github } from '../Assets/Icons/github.svg'
 import { ReactComponent as LinkedIn } from '../Assets/Icons/linkedin.svg'
 
 //from https://github.com/danklammer/bytesize-icons
-const email = <svg alt="Email" id="i-mail" viewBox="0 0 32 32" width="32" height="32" fill="none" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="2">
+const email = <svg alt="Email" id="i-mail" viewBox="0 0 32 32" width="32" height="32" fill="none" stroke="black" strokeLinecap="round" stroke-linejoin="round" stroke-width="2">
     <path d="M2 26 L30 26 30 6 2 6 Z M2 6 L16 16 30 6" /></svg>
 
 const Footer = (props) => {
