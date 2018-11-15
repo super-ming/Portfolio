@@ -48,7 +48,7 @@
   background-repeat: no-repeat;
   background-size: cover;
   width: 100%;
-  height: 650px;
+  height: 550px;
   top: 80px;
   color: white;
   text-shadow: 2px 2px 4px #000000;
@@ -100,7 +100,7 @@ intro, h2 {
   margin-left: 20%;
   z-index: 1;
   position: absolute;
-  top: 110%;
+  top: 120%;
 }
 
 .main-section {
