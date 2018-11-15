@@ -6,7 +6,6 @@ import AboutMe from './Components/aboutme';
 import Footer from './Components/footer';
 import Photo from './Assets/Images/ming.jpg';
 import SplitText from 'react-pose-text';
-import AOS from 'aos';
 import 'aos/dist/aos.css';
 import { ReactComponent as ArrowDown } from './Assets/Icons/arrowdown.svg';
 

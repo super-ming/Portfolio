@@ -25,7 +25,6 @@ class NavBar extends Component {
   }
 
   render() {
-    console.log(this.refs);
     return (
       <Navbar fixed="top" expand="lg">
         <Navbar.Brand href="#home"><h1>MH</h1></Navbar.Brand>
