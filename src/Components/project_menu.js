@@ -5,6 +5,7 @@ import FeedReader from '../Assets/Images/feedreader.JPG';
 import SingaporeMap from '../Assets/Images/singaporemap.JPG';
 import Frogger from '../Assets/Images/frogger.JPG';
 import MemoryGame from '../Assets/Images/memorygame.JPG';
+import Laptop from '../Assets/Images/laptop_frame.png';
 
 class Menu extends Component {
   constructor(props){
@@ -62,6 +63,7 @@ class Menu extends Component {
           <Jumbotron>
             <Media className="d-flex justify-content-between mediaGroup">
               <a href={projects[activeKey].href}>
+                <img alt="laptop frame" className="laptop" src={Laptop}></img>
                 <img className="project-thumbnail"
                 alt={projects[activeKey].title}
                 src={projects[activeKey].src} />
