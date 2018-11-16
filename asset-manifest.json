@@ -1,10 +1,10 @@
 {
-  "main.css": "/Portfolio/static/css/main.60469983.chunk.css",
-  "main.js": "/Portfolio/static/js/main.ed12ca84.chunk.js",
-  "main.js.map": "/Portfolio/static/js/main.ed12ca84.chunk.js.map",
+  "main.css": "/Portfolio/static/css/main.aecbc8ec.chunk.css",
+  "main.js": "/Portfolio/static/js/main.a84e9d8f.chunk.js",
+  "main.js.map": "/Portfolio/static/js/main.a84e9d8f.chunk.js.map",
   "static/css/1.32eadf08.chunk.css": "/Portfolio/static/css/1.32eadf08.chunk.css",
-  "static/js/1.5dad48ee.chunk.js": "/Portfolio/static/js/1.5dad48ee.chunk.js",
-  "static/js/1.5dad48ee.chunk.js.map": "/Portfolio/static/js/1.5dad48ee.chunk.js.map",
+  "static/js/1.0e31456a.chunk.js": "/Portfolio/static/js/1.0e31456a.chunk.js",
+  "static/js/1.0e31456a.chunk.js.map": "/Portfolio/static/js/1.0e31456a.chunk.js.map",
   "runtime~main.js": "/Portfolio/static/js/runtime~main.3b961160.js",
   "runtime~main.js.map": "/Portfolio/static/js/runtime~main.3b961160.js.map",
   "static/media/linkedin.619231ff.svg": "/Portfolio/static/media/linkedin.619231ff.svg",
@@ -22,9 +22,9 @@
   "static/media/github.617870e4.svg": "/Portfolio/static/media/github.617870e4.svg",
   "static/media/feedreader.JPG": "/Portfolio/static/media/feedreader.11bda718.JPG",
   "static/media/arrowdown.900a59b8.svg": "/Portfolio/static/media/arrowdown.900a59b8.svg",
-  "static/css/main.60469983.chunk.css.map": "/Portfolio/static/css/main.60469983.chunk.css.map",
+  "static/css/main.aecbc8ec.chunk.css.map": "/Portfolio/static/css/main.aecbc8ec.chunk.css.map",
   "static/css/1.32eadf08.chunk.css.map": "/Portfolio/static/css/1.32eadf08.chunk.css.map",
   "index.html": "/Portfolio/index.html",
-  "precache-manifest.a27e48a136b902848983857e1a51f631.js": "/Portfolio/precache-manifest.a27e48a136b902848983857e1a51f631.js",
+  "precache-manifest.61b1e5828bd4bdea34131a0afbe7bb51.js": "/Portfolio/precache-manifest.61b1e5828bd4bdea34131a0afbe7bb51.js",
   "service-worker.js": "/Portfolio/service-worker.js"
 }
