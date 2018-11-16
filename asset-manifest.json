@@ -1,7 +1,7 @@
 {
-  "main.css": "/Portfolio/static/css/main.aecbc8ec.chunk.css",
-  "main.js": "/Portfolio/static/js/main.a84e9d8f.chunk.js",
-  "main.js.map": "/Portfolio/static/js/main.a84e9d8f.chunk.js.map",
+  "main.css": "/Portfolio/static/css/main.7a5caf20.chunk.css",
+  "main.js": "/Portfolio/static/js/main.7e558d95.chunk.js",
+  "main.js.map": "/Portfolio/static/js/main.7e558d95.chunk.js.map",
   "static/css/1.32eadf08.chunk.css": "/Portfolio/static/css/1.32eadf08.chunk.css",
   "static/js/1.0e31456a.chunk.js": "/Portfolio/static/js/1.0e31456a.chunk.js",
   "static/js/1.0e31456a.chunk.js.map": "/Portfolio/static/js/1.0e31456a.chunk.js.map",
@@ -14,7 +14,7 @@
   "static/media/memorygame.JPG": "/Portfolio/static/media/memorygame.f1ef2938.JPG",
   "static/media/laptop_frame.png": "/Portfolio/static/media/laptop_frame.8347f35e.png",
   "static/media/ming.jpg": "/Portfolio/static/media/ming.54486431.jpg",
-  "static/media/styles.css": "/Portfolio/static/media/intro.df988b61.jpeg",
+  "static/media/styles.css": "/Portfolio/static/media/green_background.a7d59b85.jpg",
   "static/media/react.d9eafe58.svg": "/Portfolio/static/media/react.d9eafe58.svg",
   "static/media/javascript.1f606957.svg": "/Portfolio/static/media/javascript.1f606957.svg",
   "static/media/html5.3056bf2f.svg": "/Portfolio/static/media/html5.3056bf2f.svg",
@@ -22,9 +22,9 @@
   "static/media/github.617870e4.svg": "/Portfolio/static/media/github.617870e4.svg",
   "static/media/feedreader.JPG": "/Portfolio/static/media/feedreader.11bda718.JPG",
   "static/media/arrowdown.900a59b8.svg": "/Portfolio/static/media/arrowdown.900a59b8.svg",
-  "static/css/main.aecbc8ec.chunk.css.map": "/Portfolio/static/css/main.aecbc8ec.chunk.css.map",
   "static/css/1.32eadf08.chunk.css.map": "/Portfolio/static/css/1.32eadf08.chunk.css.map",
+  "static/css/main.7a5caf20.chunk.css.map": "/Portfolio/static/css/main.7a5caf20.chunk.css.map",
   "index.html": "/Portfolio/index.html",
-  "precache-manifest.61b1e5828bd4bdea34131a0afbe7bb51.js": "/Portfolio/precache-manifest.61b1e5828bd4bdea34131a0afbe7bb51.js",
+  "precache-manifest.1e3e8c57c879fc7654a0062723bf0e20.js": "/Portfolio/precache-manifest.1e3e8c57c879fc7654a0062723bf0e20.js",
   "service-worker.js": "/Portfolio/service-worker.js"
 }
