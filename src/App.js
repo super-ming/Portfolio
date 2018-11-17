@@ -31,9 +31,9 @@ class App extends Component {
     return (
       <div className="App">
         <nav className="App-header">
-          <Navbar className="header-navbar" />
+          <Navbar />
         </nav>
-        <section className="d-flex justify-content-center align-items-center intro">
+        <section className="d-flex justify-content-center align-items-center intro" >
           <h2 className="mb-0">
             <SplitText initialPose="exit" pose="enter" charPoses={charPoses}>
               Ming Ho, Front End Web Developer
@@ -45,12 +45,12 @@ class App extends Component {
           <div className="arrow-wrapper" ref={(ref)=> this.arrowDown = ref}>
             <ArrowDown className="arrow-down"/>
           </div>
-          <img src={Photo} alt="Ming Ho" className="profile-photo" data-aos="fade-up" data-aos-offset="400" data-aos-duration="1000"/>
+          <img src={Photo} alt="Ming Ho" className="profile-photo mr-auto " data-aos="fade-up" data-aos-offset={window.innerWidth > 1000 ? "400" : (window.innerWidth > 600 ? "300" : "0")} data-aos-duration="1000"/>
           <AboutMe />
           <hr className="line"></hr>
           <Menu></Menu>
         </main>
-        <footer>
+        <footer className="footer">
           <Footer></Footer>
         </footer>
       </div>
