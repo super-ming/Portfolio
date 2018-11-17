@@ -26,10 +26,10 @@ class NavBar extends Component {
 
   render() {
     return (
-      <Navbar fixed="top" expand="lg">
-        <Navbar.Brand href="#home"><h1>MH</h1></Navbar.Brand>
-        <div className="nav d-flex ml-auto navlink">
-          <Nav>
+      <Navbar fixed="top" className="header-navbar" expand={"lg"}>
+        <Navbar.Brand href="#home" className="logo"><h1>MH</h1></Navbar.Brand>
+        <div className="nav d-flex navlink">
+          <Nav className="header-nav">
             <NavItem>
               <div className="project-nav" ref={(ref)=> this.projectNav = ref}><h5>Projects</h5></div>
             </NavItem>
