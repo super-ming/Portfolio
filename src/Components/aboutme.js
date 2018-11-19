@@ -13,7 +13,7 @@ AOS.init();
 const aboutMe = (props) => {
   return (
     <div id="about-me" className="about-me ml-auto mr-auto" data-aos="fade-down" data-aos-offset={window.innerWidth > 1000 ? "400" : (window.innerWidth > 600 ? "300" : (window.innerWidth < 400 ? "50" : "200"))} data-aos-duration="1000">
-      <img src={Photo} alt="Ming Ho" className="profile-photo mr-auto d-flex" data-aos="fade-up" data-aos-offset={window.innerWidth > 1000 ? "400" : (window.innerWidth > 600 ? "300" : "100")} data-aos-duration="1000"/>
+      <img src={Photo} alt="Ming Ho" className="profile-photo mr-auto d-flex" data-aos="fade-up" data-aos-offset={window.innerWidth > 1000 ? "500" : (window.innerWidth > 600 ? "300" : "100")} data-aos-duration="1000"/>
       <Media>
         <Media.Body className="about-me-body">
           <h3>About Me</h3>
