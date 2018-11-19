@@ -26,8 +26,8 @@ class NavBar extends Component {
 
   render() {
     return (
-      <Navbar fixed="top" className="header-navbar" expand={"lg"}>
-        <Navbar.Brand href="#home" className="logo"><h1>MH</h1></Navbar.Brand>
+      <Navbar fixed="top" className="header-navbar" expand={"md"}>
+        <Navbar.Brand href="#" className="logo"><h1>MH</h1></Navbar.Brand>
         <div className="nav d-flex navlink">
           <Nav className="header-nav">
             <NavItem>
