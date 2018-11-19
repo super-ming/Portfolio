@@ -1,13 +1,11 @@
 import React, { Component } from 'react';
-import { Tabs, Tab, Jumbotron, Media } from 'react-bootstrap';
+import { Jumbotron, Media } from 'react-bootstrap';
 import CatClicker from '../Assets/Images/catclicker.JPG';
 import FeedReader from '../Assets/Images/feedreader.JPG';
 import SingaporeMap from '../Assets/Images/singaporemap.JPG';
 import Frogger from '../Assets/Images/frogger.JPG';
 import MemoryGame from '../Assets/Images/memorygame.JPG';
 import Laptop from '../Assets/Images/laptop_frame.png';
-import { ReactComponent as ArrowRight } from '../Assets/Icons/arrowright.svg';
-import { ReactComponent as ArrowLeft } from '../Assets/Icons/arrowleft.svg';
 
 class Menu extends Component {
   constructor(props){
@@ -61,37 +59,25 @@ class Menu extends Component {
   render() {
     const projects = this.state.projects;
     let activeKey = this.state.key;
+    const forwardArrow =  <svg xmlns="http://www.w3.org/2000/svg" width="44" height="44" viewBox="0 0 24 24" fill-rule="evenodd" clip-rule="evenodd"><path d="M12 0c6.623 0 12 5.377 12 12s-5.377 12-12 12-12-5.377-12-12 5.377-12 12-12zm0 1c6.071 0 11 4.929 11 11s-4.929 11-11 11-11-4.929-11-11 4.929-11 11-11zm-3 5.753l6.44 5.247-6.44 5.263.678.737 7.322-6-7.335-6-.665.753z"/></svg>
+    const backwardArrow = <svg xmlns="http://www.w3.org/2000/svg" width="44" height="44" viewBox="0 0 24 24" fill-rule="evenodd" clip-rule="evenodd"><path d="M12 0c6.623 0 12 5.377 12 12s-5.377 12-12 12-12-5.377-12-12 5.377-12 12-12zm0 1c6.071 0 11 4.929 11 11s-4.929 11-11 11-11-4.929-11-11 4.929-11 11-11zm3 5.753l-6.44 5.247 6.44 5.263-.678.737-7.322-6 7.335-6 .665.753z"/></svg>
     return(
-      <div className="project-wrapper" data-aos="fade-up" data-aos-offset={window.innerWidth < 600 ? 400 : (200)} data-aos-duration="1000">
+      <div className="project-wrapper d-flex justify-content-center" data-aos="fade-up" data-aos-offset={window.innerWidth < 600 ? 200 : (400)} data-aos-duration="1000">
         <div id="projects" className="projects">
           <h3>Projects</h3>
         </div>
-        <div className="d-flex justify-content-center project-main">
-          <Tabs
-            className="project-tabs justify-content-center"
-            activeKey={this.state.key}
-            onSelect={this.handleSelect}
-            variant="pills">
-            { projects && (projects.map((project, index) =>
-              <Tab
-                eventKey={index}
-                key={index}
-                title={projects[index].title} />
-            ))}
-          </Tabs>
-        </div>
         <div className="jumbo-wrapper">
           <Jumbotron>
-            <Media className="justify-content-between mediaGroup">
+            <Media className="d-flex justify-content-center mediaGroup">
               <a href={projects[activeKey].href}>
-                <img alt="laptop frame" className="laptop" src={Laptop}></img>
+                <img className="laptop" alt="laptop frame" src={Laptop} />
                 <img className="project-thumbnail"
-                alt={projects[activeKey].title}
-                src={projects[activeKey].src} />
+                     alt={projects[activeKey].title}
+                     src={projects[activeKey].src} />
               </a>
               <div className="d-flex justify-content-center nav-arrow">
-                <ArrowLeft className="arrow-left" width="34" onClick={this.backArrowSelect}/>
-                <ArrowRight className="arrow-right" width="34" onClick={this.forwardArrowSelect}/>
+                <button className="arrow-left" alt="Back arrow for previous project" onClick={this.backArrowSelect}>{backwardArrow}</button>
+                <button className="arrow-right" alt="Forward arrow for next project" onClick={this.forwardArrowSelect}>{forwardArrow}</button>
               </div>
               <Media.Body className="project-text">
                 <h4>{projects[activeKey].title}</h4>
