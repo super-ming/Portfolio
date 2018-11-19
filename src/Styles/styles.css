@@ -99,9 +99,16 @@ html {
   background-size: contain;
 }
 
-.arrow-wrapper {
-  height: 40px;
-  width: 40px;
+.main-section a {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.arrow-wrapper svg {
+  height: 70px;
+  width: 70px;
   margin: 0 auto 70px auto;
   padding-top: 20px;
   animation: bounce 2s linear 0s infinite normal;

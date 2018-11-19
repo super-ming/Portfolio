@@ -17,27 +17,6 @@ enter: {
 }};
 
 class App extends Component {
-  componentDidMount() {
-    this.arrowDown.addEventListener('keypress', (e)=>{ if(e.keycode === 13){ this.adjustArrowDown(e) } }, false);
-    this.arrowDown.addEventListener('click', this.adjustArrowDown, false);
-  }
-
-  adjustArrowDown = (e) => {
-    if (window.innerWidth < 929) {
-      window.scroll({
-        top: 420,
-        left: 0,
-        behavior: 'smooth'
-      });
-    } else {
-      window.scroll({
-        top: 750,
-        left: 0,
-        behavior: 'smooth'
-      });
-    }
-  }
-
   render() {
     return (
       <div className="App">
@@ -52,10 +31,10 @@ class App extends Component {
           </h2>
           <span className="underline"/>
         </section>
-        <main className="main-section">
-          <div className="arrow-wrapper" ref={(ref)=> this.arrowDown = ref}>
-            <ArrowDown alt="down arrow for skipping to about me section" className="arrow-down" role="button"/>
-          </div>
+        <main className="main-section ml-auto mr-auto">
+          <a className="arrow-wrapper" href="#about-me">
+            <ArrowDown alt="down arrow for skipping to about me section" className="arrow-down"/>
+          </a>
           <AboutMe />
           <hr className="line"></hr>
           <Menu></Menu>
