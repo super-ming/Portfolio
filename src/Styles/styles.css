@@ -90,6 +90,11 @@
   }
 }
 
+.main-section {
+  background-image: url('../Assets/Images/green1_background.png');
+  background-size: contain;
+}
+
 .arrow-wrapper {
   height: 30px;
   width: 30px;
@@ -151,10 +156,6 @@
   width: 85%;
   background-color: white;
   height: 2px;
-}
-
-.main-section {
-  background-color: #29e8b0;
 }
 
 .project-wrapper {
@@ -392,11 +393,6 @@
     height: 27px;
   }
 
-  .main-section {
-    background-image: url('../Assets/Images/green_background.jpg');
-    background-size: contain;
-  }
-
   .arrow-down {
     margin-top: 40px;
     width: 40px;
@@ -484,11 +480,6 @@
   .underline {
     display: block;
     height: 32px;
-  }
-
-  .main-section {
-    background-image: url('../Assets/Images/green_background.jpg');
-    background-size: contain;
   }
 
   .arrow-down {
@@ -589,11 +580,6 @@
   .line {
     background-color: black;
     margin-bottom: 150px;
-  }
-
-  .main-section {
-    background-image: url('../Assets/Images/green_background.jpg');
-    background-size: contain;
   }
 
   .arrow-down {
@@ -703,11 +689,6 @@
     margin-bottom: 150px;
   }
 
-  .main-section {
-    background-image: url('../Assets/Images/green_background.jpg');
-    background-size: contain;
-  }
-
   .arrow-down {
     margin-top: 40px;
     width: 50px;
@@ -798,11 +779,6 @@
   .intro h2 {
     font-size: 36px;
     width: 50%;
-  }
-
-  .main-section {
-    background-image: url('../Assets/Images/green_background.jpg');
-    background-size: contain;
   }
 
   .arrow-down {

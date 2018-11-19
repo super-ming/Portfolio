@@ -15,7 +15,6 @@ const Footer = (props) => {
           <Nav.Link href="https://github.com/super-ming"><Github alt="Github" /></Nav.Link>
           <Nav.Link href="https://www.linkedin.com/in/mingyho"><LinkedIn fill="#0077B5" alt="LinkedIn" /></Nav.Link>
           <Nav.Link href="mailto:mingyho@gmail.com">{email}</Nav.Link>
-          <Nav.Link href="https://www.freepik.com/free-photos-vectors/background">Background vector created by Kjpargeter - Freepik.com</Nav.Link>
         </Row>
       </Nav>
     </Navbar>
