@@ -3,25 +3,37 @@ import { Nav, Navbar, NavItem } from 'react-bootstrap';
 
 class NavBar extends Component {
   componentDidMount() {
-    [this.projectNav, this.aboutNav].forEach(element => {
-      if(element === this.projectNav){
-        element.addEventListener('click', ()=> {
-          window.scroll({
-            top: 1400,
-            left: 0,
-            behavior: 'smooth'
-          });
+    this.projectNav.addEventListener('click', () => {
+      if(window.innerWidth > 901){
+        window.scroll({
+          top: 1700,
+          left: 0,
+          behavior: 'smooth'
         });
-      } else if(element === this.aboutNav){
-        element.addEventListener('click', ()=> {
-          window.scroll({
-            top: 750,
-            left: 0,
-            behavior: 'smooth'
-          });
+      } else {
+        window.scroll({
+          top: 1200,
+          left: 0,
+          behavior: 'smooth'
         });
       }
-    })
+    });
+
+    this.aboutNav.addEventListener('click', () => {
+      if(window.innerWidth > 901){
+        window.scroll({
+          top: 750,
+          left: 0,
+          behavior: 'smooth'
+        });
+      } else {
+        window.scroll({
+          top: 650,
+          left: 0,
+          behavior: 'smooth'
+        });
+      }
+    });
   }
 
   render() {
