@@ -23,21 +23,13 @@ class App extends Component {
 
   adjustArrowDown = () => {
     this.arrowDown.addEventListener('click', ()=> {
-      if (window.innerWidth < 1051) {
+      if (window.innerWidth < 929) {
         window.scroll({
           top: 420,
           left: 0,
           behavior: 'smooth'
         });
-      } else if(window.innerWidth > 1051) {
-        window.scroll({
-          top: 650,
-          left: 0,
-          behavior: 'smooth'
-        });
-      }
-
-      else {
+      } else {
         window.scroll({
           top: 750,
           left: 0,
