@@ -151,6 +151,10 @@
   fill: white;
   background-color: #076db1;
 }
+.jquery-icon {
+  fill: #0769AD;
+  background-color: white;
+}
 
 .line {
   width: 85%;
@@ -264,10 +268,6 @@
   margin: 0 20px 0 0;
   width: 40px;
   height: 40px;
-}
-
-.social-icons a:last-child {
-  display: none;
 }
 
 @media only screen and (min-width: 450px) and (max-width: 575px) {
@@ -622,7 +622,7 @@
   .project-thumbnail {
     max-width: 47vw;
     height: 320px;
-    margin-top: 30px;
+    margin-top: 28px;
     margin-bottom: 70px;
   }
 
@@ -728,9 +728,9 @@
   }
 
   .project-thumbnail {
-    width: 47vw;
-    height: 30vw;
-    margin-top: 30px;
+    width: 46vw;
+    height: 29vw;
+    margin-top: 26px;
     margin-bottom: 70px;
   }
 
@@ -860,8 +860,8 @@
 
   .project-thumbnail {
     width: 26vw;
-    height: 20vw;
-    margin-top: 28px;
+    height: 21vw;
+    margin-top: 26px;
     margin-bottom: 70px;
   }
 

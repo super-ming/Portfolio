@@ -6,6 +6,7 @@ import { ReactComponent as ReactIcon } from '../Assets/Icons/react.svg';
 import { ReactComponent as JavaScript } from '../Assets/Icons/javascript.svg';
 import { ReactComponent as Html5 } from '../Assets/Icons/html5.svg';
 import { ReactComponent as Css3 } from '../Assets/Icons/css3.svg';
+import { ReactComponent as Jquery } from '../Assets/Icons/jquery.svg';
 import Photo from '../Assets/Images/ming.jpg';
 
 AOS.init();
@@ -25,6 +26,7 @@ const aboutMe = (props) => {
             <JavaScript alt="JavaScript Icon" className="js-icon"/>
             <Html5 alt="HTML5 Icon" className="html-icon"/>
             <Css3 alt="CSS3 Icon" className="css-icon"/>
+            <Jquery alt="jQuery Icon" className="jquery-icon"/>
           </div>
         </Media.Body>
       </Media>
