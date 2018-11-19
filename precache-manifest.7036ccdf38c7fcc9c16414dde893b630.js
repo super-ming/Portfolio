@@ -4,16 +4,16 @@ self.__precacheManifest = [
     "url": "/Portfolio/static/media/ming.54486431.jpg"
   },
   {
-    "revision": "7e558d95d95f090634ee",
-    "url": "/Portfolio/static/css/main.7a5caf20.chunk.css"
+    "revision": "c032c44fe7d04ca7457b",
+    "url": "/Portfolio/static/css/main.2c917b28.chunk.css"
   },
   {
     "revision": "900a59b80c5dadc5786607ddf6b5c251",
     "url": "/Portfolio/static/media/arrowdown.900a59b8.svg"
   },
   {
-    "revision": "0e31456a23d9083ff462",
-    "url": "/Portfolio/static/js/1.0e31456a.chunk.js"
+    "revision": "8e41180d57ba026273c1",
+    "url": "/Portfolio/static/js/1.8e41180d.chunk.js"
   },
   {
     "revision": "3b96116072eb85f5a3a2",
@@ -24,8 +24,8 @@ self.__precacheManifest = [
     "url": "/Portfolio/static/media/catclicker.82fff6c6.JPG"
   },
   {
-    "revision": "11bda718375ef63b2b45bdb7ffd3104a",
-    "url": "/Portfolio/static/media/feedreader.11bda718.JPG"
+    "revision": "ccfa8fa261cf60d5b196d0d5f5f6a296",
+    "url": "/Portfolio/static/media/feedreader.ccfa8fa2.JPG"
   },
   {
     "revision": "c31b0721da7dc9ac597f00867d50feeb",
@@ -44,16 +44,16 @@ self.__precacheManifest = [
     "url": "/Portfolio/static/media/laptop_frame.8347f35e.png"
   },
   {
-    "revision": "7e558d95d95f090634ee",
-    "url": "/Portfolio/static/js/main.7e558d95.chunk.js"
+    "revision": "c032c44fe7d04ca7457b",
+    "url": "/Portfolio/static/js/main.c032c44f.chunk.js"
+  },
+  {
+    "revision": "ffccb4987c10c9ddde047e003a47513a",
+    "url": "/Portfolio/static/media/green1_background.ffccb498.png"
   },
   {
     "revision": "df988b613fb8523d77bf015f63245975",
     "url": "/Portfolio/static/media/intro.df988b61.jpeg"
-  },
-  {
-    "revision": "a7d59b85f523ee4bf92cba335f5eafff",
-    "url": "/Portfolio/static/media/green_background.a7d59b85.jpg"
   },
   {
     "revision": "d9eafe58bd418f27bf19043b89046ca0",
@@ -80,11 +80,11 @@ self.__precacheManifest = [
     "url": "/Portfolio/static/media/linkedin.619231ff.svg"
   },
   {
-    "revision": "0e31456a23d9083ff462",
-    "url": "/Portfolio/static/css/1.32eadf08.chunk.css"
+    "revision": "8e41180d57ba026273c1",
+    "url": "/Portfolio/static/css/1.d5806691.chunk.css"
   },
   {
-    "revision": "f3d825a0bdb2fe88fb743572b576513f",
+    "revision": "0abe1d4710bfad1b604a814af1069567",
     "url": "/Portfolio/index.html"
   }
 ];
