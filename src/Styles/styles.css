@@ -96,11 +96,11 @@
 }
 
 .arrow-wrapper {
-  height: 30px;
-  width: 30px;
+  height: 40px;
+  width: 40px;
   margin: 0 auto 70px auto;
   padding-top: 20px;
-  animation: bounce 2s linear 0s infinite normal ;
+  animation: bounce 2s linear 0s infinite normal;
 }
 
 .profile-photo {
@@ -286,7 +286,7 @@
   }
 }
 
-@media only screen and (min-width: 576px) and (max-width: 700px) {
+@media only screen and (min-width: 576px) and (max-width: 766px) {
   .logo h1 {
     font-size: 18px;
   }
@@ -313,52 +313,6 @@
 
   .nav-item h5 {
     font-size: 18px;
-  }
-}
-
-@media only screen and (min-width: 701px) and (max-width: 766px) {
-  .nav-item h5 {
-    font-size: 18px;
-  }
-
-  .logo h1 {
-    font-size: 20px;
-  }
-
-  .intro h2 {
-    width: 45%;
-  }
-
-  .underline {
-    height: 27px;
-  }
-
-  .about-me {
-    padding: 30px;
-  }
-
-  .about-me-body {
-    padding: 2rem;
-  }
-
-  .mediaGroup {
-    height: auto;
-  }
-
-  .mediaGroup a {
-    width: 100%;
-  }
-
-  .laptop {
-    width: 80vw;
-    height: 52vw;
-  }
-
-  .project-thumbnail {
-    width: 62vw;
-    height: 42vw;
-    margin-top: 27px;
-    margin-bottom: 70px;
   }
 }
 
@@ -395,8 +349,6 @@
 
   .arrow-down {
     margin-top: 40px;
-    width: 40px;
-    height: 40px;
   }
 
   .profile-photo {
@@ -444,96 +396,7 @@
   }
 }
 
-@media only screen and (min-width: 901px) and (max-width: 1048px) {
-  .logo {
-    margin-left: 25px;
-    margin-top: 50px;
-  }
-
-  .logo h1 {
-    font-size: 20px;
-  }
-
-  .nav {
-    margin-left: auto;
-  }
-
-  .nav-item a {
-    padding-top: 0;
-  }
-
-  .nav-item h5 {
-    font-size: 20px;
-  }
-
-  .intro {
-    height: 450px;
-  }
-
-  .intro h2 {
-    font-size: 24px;
-    border-bottom: 2px solid #04b163;
-    animation: fadeIn 2.25s;
-    width: 45%;
-  }
-
-  .underline {
-    display: block;
-    height: 32px;
-  }
-
-  .arrow-down {
-    margin-top: 40px;
-    width: 40px;
-    height: 40px;
-  }
-
-  .profile-photo {
-    width: 45%;
-  }
-
-  .about-me-body {
-    padding: 2rem;
-    font-size: 18px;
-  }
-
-  .mediaGroup {
-    height: auto;
-  }
-
-  .mediaGroup a {
-    width: 100%;
-  }
-
-  .laptop {
-    width: 70vw;
-    height: 42vw;
-  }
-
-  .project-thumbnail {
-    width: 57vw;
-    height: 350px;
-    margin-top: 30px;
-    margin-bottom: 70px;
-  }
-
-  .project-text {
-    font-size: 20px;
-    padding: 1rem;
-  }
-
-  .project-text h4 {
-    font-size: 28px;
-    margin-bottom: 30px;
-  }
-
-  .nav-arrow{
-    margin-top: 50px;
-    margin-left: 20px;
-  }
-}
-
-@media only screen and (min-width: 1049px) and (max-width: 1157px) {
+@media only screen and (min-width: 901px) and (max-width: 1157px) {
   .logo {
     margin-left: 25px;
     margin-top: 50px;
@@ -584,8 +447,6 @@
 
   .arrow-down {
     margin-top: 40px;
-    width: 40px;
-    height: 40px;
   }
 
   .profile-photo {
@@ -620,9 +481,9 @@
   }
 
   .project-thumbnail {
-    max-width: 47vw;
-    height: 320px;
-    margin-top: 28px;
+    max-width: 46vw;
+    height: 28vw;
+    margin-top: 26px;
     margin-bottom: 70px;
   }
 
