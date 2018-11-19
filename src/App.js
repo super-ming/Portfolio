@@ -5,8 +5,11 @@ import Menu from './Components/project_menu';
 import AboutMe from './Components/aboutme';
 import Footer from './Components/footer';
 import SplitText from 'react-pose-text';
+import AOS from 'aos';
 import 'aos/dist/aos.css';
 import { ReactComponent as ArrowDown } from './Assets/Icons/arrowdown.svg';
+
+AOS.init();
 
 const charPoses = {
 exit: { opacity: 0, y: 20 },

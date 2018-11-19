@@ -19,13 +19,13 @@ class NavBar extends Component {
         <div className="nav d-flex navlink">
           <Nav className="header-nav">
             <NavItem>
-              <Nav.Link className="project-nav" href="#projects"><h5>Projects</h5></Nav.Link>
+              <Nav.Link className="project-nav" href="#projects" data-aos="fade-down" data-aos-delay="1850" data-aos-duration="1000"><h5>Projects</h5></Nav.Link>
             </NavItem>
             <NavItem>
-              <Nav.Link className="blog" href="https://medium.com/@superming"><h5>Blog</h5></Nav.Link>
+              <Nav.Link className="blog" href="https://medium.com/@superming" data-aos="fade-down" data-aos-delay="2100" data-aos-duration="1000"><h5>Blog</h5></Nav.Link>
             </NavItem>
             <NavItem>
-              <Nav.Link className="about-nav" href="#about-me"><h5>About</h5></Nav.Link>
+              <Nav.Link className="about-nav" href="#about-me" data-aos="fade-down" data-aos-delay="2350" data-aos-duration="1000"><h5>About</h5></Nav.Link>
             </NavItem>
           </Nav>
         </div>

@@ -10,7 +10,7 @@ const email = <svg alt="Email" id="i-mail" viewBox="0 0 32 32" width="32" height
 const Footer = (props) => {
   return (
     <Navbar className="d-flex justify-content-center align-items-center">
-      <Nav className="social-icons" >
+      <Nav className="social-icons d-flex justify-content-center" >
         <Row className="d-flex justify-content-center row">
           <Nav.Link href="https://github.com/super-ming"><Github alt="Github" /></Nav.Link>
           <Nav.Link href="https://www.linkedin.com/in/mingyho"><LinkedIn fill="#0077B5" alt="LinkedIn" /></Nav.Link>

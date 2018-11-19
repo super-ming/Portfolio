@@ -32,26 +32,9 @@ html {
   font-size: 15px;
 }
 
-.project-nav {
-  animation: slide-top 2.25s;
-}
-
-.blog {
-  animation: slide-top 2.5s;
-}
-
-.about-nav {
-  animation: slide-top 2.75s;
-}
-
 @keyframes bounce {
   0%, 50%, 100% {transform: translateY(-15px);}
   25%, 75% {transform: translateY(15px);}
-}
-
-@keyframes slide-top {
-  0% {transform: translateY(-1000px); opacity: 0;}
-  100% {transform: translateY(0); opacity: 1}
 }
 
 .intro {
