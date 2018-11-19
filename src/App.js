@@ -18,25 +18,24 @@ enter: {
 
 class App extends Component {
   componentDidMount() {
-    this.adjustArrowDown();
+    this.arrowDown.addEventListener('keypress', (e)=>{ if(e.keycode === 13){ this.adjustArrowDown(e) } }, false);
+    this.arrowDown.addEventListener('click', this.adjustArrowDown, false);
   }
 
-  adjustArrowDown = () => {
-    this.arrowDown.addEventListener('click', ()=> {
-      if (window.innerWidth < 929) {
-        window.scroll({
-          top: 420,
-          left: 0,
-          behavior: 'smooth'
-        });
-      } else {
-        window.scroll({
-          top: 750,
-          left: 0,
-          behavior: 'smooth'
-        });
-      }
-    });
+  adjustArrowDown = (e) => {
+    if (window.innerWidth < 929) {
+      window.scroll({
+        top: 420,
+        left: 0,
+        behavior: 'smooth'
+      });
+    } else {
+      window.scroll({
+        top: 750,
+        left: 0,
+        behavior: 'smooth'
+      });
+    }
   }
 
   render() {
@@ -55,7 +54,7 @@ class App extends Component {
         </section>
         <main className="main-section">
           <div className="arrow-wrapper" ref={(ref)=> this.arrowDown = ref}>
-            <ArrowDown alt="down arrow for skipping to about me section" className="arrow-down"/>
+            <ArrowDown alt="down arrow for skipping to about me section" className="arrow-down" role="button"/>
           </div>
           <AboutMe />
           <hr className="line"></hr>

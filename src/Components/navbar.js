@@ -3,36 +3,12 @@ import { Nav, Navbar, NavItem } from 'react-bootstrap';
 
 class NavBar extends Component {
   componentDidMount() {
-    this.projectNav.addEventListener('click', () => {
-      if(window.innerWidth > 901){
-        window.scroll({
-          top: 1700,
-          left: 0,
-          behavior: 'smooth'
-        });
-      } else {
-        window.scroll({
-          top: 1200,
-          left: 0,
-          behavior: 'smooth'
-        });
-      }
+    document.querySelector(".project-nav").addEventListener('click', () => {
+      document.querySelector("#projects").focus();
     });
 
-    this.aboutNav.addEventListener('click', () => {
-      if(window.innerWidth > 901){
-        window.scroll({
-          top: 750,
-          left: 0,
-          behavior: 'smooth'
-        });
-      } else {
-        window.scroll({
-          top: 650,
-          left: 0,
-          behavior: 'smooth'
-        });
-      }
+    document.querySelector(".about-nav").addEventListener('click', () => {
+      document.querySelector("#about-me").focus();
     });
   }
 
@@ -43,13 +19,13 @@ class NavBar extends Component {
         <div className="nav d-flex navlink">
           <Nav className="header-nav">
             <NavItem>
-              <div className="project-nav" ref={(ref)=> this.projectNav = ref}><h5>Projects</h5></div>
+              <Nav.Link className="project-nav" href="#projects"><h5>Projects</h5></Nav.Link>
             </NavItem>
             <NavItem>
               <Nav.Link className="blog" href="https://medium.com/@superming"><h5>Blog</h5></Nav.Link>
             </NavItem>
             <NavItem>
-              <div className="about" ref={(ref)=> this.aboutNav = ref}><h5>About</h5></div>
+              <Nav.Link className="about-nav" href="#about-me"><h5>About</h5></Nav.Link>
             </NavItem>
           </Nav>
         </div>
