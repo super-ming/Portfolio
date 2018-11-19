@@ -4,7 +4,6 @@ import Navbar from './Components/navbar';
 import Menu from './Components/project_menu';
 import AboutMe from './Components/aboutme';
 import Footer from './Components/footer';
-import Photo from './Assets/Images/ming.jpg';
 import SplitText from 'react-pose-text';
 import 'aos/dist/aos.css';
 import { ReactComponent as ArrowDown } from './Assets/Icons/arrowdown.svg';
@@ -19,14 +18,35 @@ enter: {
 
 class App extends Component {
   componentDidMount() {
+    this.adjustArrowDown();
+  }
+
+  adjustArrowDown = () => {
     this.arrowDown.addEventListener('click', ()=> {
-      window.scroll({
-        top: 750,
-        left: 0,
-        behavior: 'smooth'
-      });
+      if (window.innerWidth < 1051) {
+        window.scroll({
+          top: 420,
+          left: 0,
+          behavior: 'smooth'
+        });
+      } else if(window.innerWidth > 1051) {
+        window.scroll({
+          top: 650,
+          left: 0,
+          behavior: 'smooth'
+        });
+      }
+
+      else {
+        window.scroll({
+          top: 750,
+          left: 0,
+          behavior: 'smooth'
+        });
+      }
     });
   }
+
   render() {
     return (
       <div className="App">
@@ -43,9 +63,8 @@ class App extends Component {
         </section>
         <main className="main-section">
           <div className="arrow-wrapper" ref={(ref)=> this.arrowDown = ref}>
-            <ArrowDown className="arrow-down"/>
+            <ArrowDown alt="down arrow for skipping to about me section" className="arrow-down"/>
           </div>
-          <img src={Photo} alt="Ming Ho" className="profile-photo mr-auto " data-aos="fade-up" data-aos-offset={window.innerWidth > 1000 ? "400" : (window.innerWidth > 600 ? "300" : "0")} data-aos-duration="1000"/>
           <AboutMe />
           <hr className="line"></hr>
           <Menu></Menu>
