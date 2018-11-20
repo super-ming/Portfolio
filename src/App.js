@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import './Styles/styles.css'
+import './App.scss';
 import Navbar from './Components/navbar';
 import Menu from './Components/project_menu';
 import AboutMe from './Components/aboutme';
@@ -9,8 +9,10 @@ import AOS from 'aos';
 import 'aos/dist/aos.css';
 import { ReactComponent as ArrowDown } from './Assets/Icons/arrowdown.svg';
 
+//Initiate AOS animation library
 AOS.init();
 
+//Animation properties for React Pose Text to add animation for each letter
 const charPoses = {
 exit: { opacity: 0, y: 20 },
 enter: {
