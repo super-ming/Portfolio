@@ -3,6 +3,7 @@ import { Nav, Navbar, NavItem } from 'react-bootstrap';
 
 class NavBar extends Component {
   componentDidMount() {
+    //Update focus as CSS smooth scrolling does not automatically update focus to the scrolled location
     document.querySelector(".project-nav").addEventListener('click', () => {
       document.querySelector("#projects").focus();
     });
