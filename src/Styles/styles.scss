@@ -40,7 +40,7 @@ html {
 .intro {
   height: 300px;
   top: 150px;
-  background-image: url('../Assets/Images/intro.jpeg');
+  background-image: url('./Assets/Images/intro.jpeg');
   background-repeat: no-repeat;
   background-size: cover;
   color: white;
@@ -78,7 +78,7 @@ html {
 }
 
 .main-section {
-  background-image: url('../Assets/Images/green1_background.png');
+  background-image: url('./Assets/Images/green1_background.png');
   background-size: contain;
 }
 
