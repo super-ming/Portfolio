@@ -18,7 +18,6 @@ class Menu extends Component {
         {title: "Frogger Game", href:"https://super-ming.github.io/frontend-nanodegree-arcade-game/", tools: ['JavaScript', 'Html5', 'Css3'], src: Frogger, text:"This is a classic arcade game created with JavaScript, HTML, and CSS."},
         {title: "Memory Card Game", href:"https://super-ming.github.io/Memory-Card/", src: MemoryGame, tools: ['JavaScript', 'Html5', 'Css3'], text:"This is a memory game created with JavaScript, HTML, and CSS."}
       ],
-      activeProject: [],
       key: 0
     }
   }
