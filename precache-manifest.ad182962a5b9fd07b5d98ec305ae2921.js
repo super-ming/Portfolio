@@ -1,19 +1,19 @@
 self.__precacheManifest = [
   {
-    "revision": "54486431946122e22ac2bf58f2a7a4a1",
-    "url": "/Portfolio/static/media/ming.54486431.jpg"
+    "revision": "fe87edc417df714941357d886008e9a0",
+    "url": "/Portfolio/static/media/green1_background.fe87edc4.png"
   },
   {
-    "revision": "c39e6d88e919af458f07",
-    "url": "/Portfolio/static/css/main.91b188ea.chunk.css"
+    "revision": "86695eb0e62e41f7b6d4",
+    "url": "/Portfolio/static/css/main.7f84db12.chunk.css"
   },
   {
     "revision": "900a59b80c5dadc5786607ddf6b5c251",
     "url": "/Portfolio/static/media/arrowdown.900a59b8.svg"
   },
   {
-    "revision": "56bb9126f818e15bfcd4",
-    "url": "/Portfolio/static/js/1.56bb9126.chunk.js"
+    "revision": "3f3cea48246d267ae83a",
+    "url": "/Portfolio/static/js/1.3f3cea48.chunk.js"
   },
   {
     "revision": "3b96116072eb85f5a3a2",
@@ -44,12 +44,12 @@ self.__precacheManifest = [
     "url": "/Portfolio/static/media/laptop_frame.8347f35e.png"
   },
   {
-    "revision": "c39e6d88e919af458f07",
-    "url": "/Portfolio/static/js/main.c39e6d88.chunk.js"
+    "revision": "54486431946122e22ac2bf58f2a7a4a1",
+    "url": "/Portfolio/static/media/ming.54486431.jpg"
   },
   {
-    "revision": "fe87edc417df714941357d886008e9a0",
-    "url": "/Portfolio/static/media/green1_background.fe87edc4.png"
+    "revision": "86695eb0e62e41f7b6d4",
+    "url": "/Portfolio/static/js/main.86695eb0.chunk.js"
   },
   {
     "revision": "df988b613fb8523d77bf015f63245975",
@@ -76,6 +76,10 @@ self.__precacheManifest = [
     "url": "/Portfolio/static/media/jquery.d5ac4d96.svg"
   },
   {
+    "revision": "b1b360f517849f9eb939165d18738714",
+    "url": "/Portfolio/static/media/bootstrap.b1b360f5.svg"
+  },
+  {
     "revision": "617870e422d4b75087cdcf9ff298032e",
     "url": "/Portfolio/static/media/github.617870e4.svg"
   },
@@ -84,11 +88,11 @@ self.__precacheManifest = [
     "url": "/Portfolio/static/media/linkedin.619231ff.svg"
   },
   {
-    "revision": "56bb9126f818e15bfcd4",
+    "revision": "3f3cea48246d267ae83a",
     "url": "/Portfolio/static/css/1.d5806691.chunk.css"
   },
   {
-    "revision": "99fb46e4b52b0a7b5dfe11af7589c2de",
+    "revision": "301540962a680c14dd179cc62e6194ff",
     "url": "/Portfolio/index.html"
   }
 ];
