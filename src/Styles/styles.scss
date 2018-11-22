@@ -125,7 +125,6 @@ html { scroll-behavior: smooth; }
   margin: 20px 10px 0px 10px;
   width: 50px;
   height: 50px;
-  position: absolute;
 }
 .skills-items {
   font-size: 18px;
@@ -134,7 +133,7 @@ html { scroll-behavior: smooth; }
   box-shadow: 0 2px 5px 0 rgba(0,0,0,0.16);
   padding: 0px 20px 0px 20px;
   width: 80%;
-  height: 350px;
+  height: 450px;
 }
 .row {
   max-width: 95vw;
@@ -160,7 +159,6 @@ html { scroll-behavior: smooth; }
   background-color: white;
 }
 .bootstrap-icon { fill: #563D7C; }
-
 .skills-items svg:hover  {
   width: 50%;
 }
@@ -176,6 +174,7 @@ html { scroll-behavior: smooth; }
 .jumbotron {
   margin-bottom: 0!important;
   padding-bottom: 0!important;
+  opacity: .9;
 }
 .mediaGroup {
   flex-wrap: wrap;
@@ -215,7 +214,7 @@ html { scroll-behavior: smooth; }
 .nav-arrow button {
   background: none;
   border: none;
-  fill: #30aa77;
+  fill: #1f79d5;
 }
 .nav-arrow > button:hover { fill: white; }
 .project-text { height: 230px; }
