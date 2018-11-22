@@ -23,8 +23,10 @@ class Menu extends Component {
   }
 
   handleSelect = (key)=> {
+    //Trigger fade out of current project
     document.querySelector(".project-thumbnail").classList.remove("active-project");
     document.querySelector(".project-thumbnail").classList.add("inactive-project");
+    //Once current project is off-screen, swap with new project and trigger fade in
     setTimeout(()=>{
       document.querySelector(".project-thumbnail").classList.remove("inactive-project");
       this.setState({ key }, this.changeView)
@@ -76,12 +78,14 @@ class Menu extends Component {
               </a>
               <div className="d-flex justify-content-center nav-arrow">
                 <button className="arrow-left" alt="Back arrow for previous project" onClick={this.backArrowSelect}>{backwardArrow}</button>
-                <button className="arrow-right" alt="Forward arrow for next project" onClick={this.forwardArrowSelect}>{forwardArrow}</button>
               </div>
               <Media.Body className="project-text">
                 <h4>{projects[activeKey].title}</h4>
                 <p>{projects[activeKey].text}</p>
               </Media.Body>
+              <div className="d-flex justify-content-center nav-arrow">
+                <button className="arrow-right" alt="Forward arrow for next project" onClick={this.forwardArrowSelect}>{forwardArrow}</button>
+              </div>
             </Media>
           </Jumbotron>
         </div>
