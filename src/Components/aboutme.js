@@ -11,7 +11,7 @@ const aboutMe = (props) => {
           <h3>About Me</h3>
           <p>Hi! As a web developer, I strive to create solutions for problems that matter to others. I enjoy making things that people find useful.
              I love learning about new things. You can also ask me anything travel related as I enjoy travelling and new experiences.
-             Take a look at my projects below!
+             Check out my projects below!
           </p>
         </Media.Body>
       </Media>
