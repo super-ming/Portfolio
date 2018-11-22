@@ -3,6 +3,7 @@ import './App.scss';
 import Navbar from './Components/navbar';
 import Menu from './Components/project_menu';
 import AboutMe from './Components/aboutme';
+import Skills from './Components/skills';
 import Footer from './Components/footer';
 import SplitText from 'react-pose-text';
 import AOS from 'aos';
@@ -41,6 +42,7 @@ class App extends Component {
             <ArrowDown alt="down arrow for skipping to about me section" className="arrow-down"/>
           </a>
           <AboutMe />
+          <Skills/>
           <hr className="line"></hr>
           <Menu></Menu>
         </main>

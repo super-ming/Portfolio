@@ -1,40 +1,31 @@
-html {
-  scroll-behavior: smooth;
-}
+html { scroll-behavior: smooth; }
 
 .header-navbar {
   height: 50px;
   background-color: transparent;
   padding: 0!important;
 }
-
 .logo h1 {
   left: 20px;
   padding: 0;
   font-size: 12px;
 }
-
 .navbar-brand h1 {
   margin-left: 15px;
   text-decoration: none;
   color: white;
   text-shadow: 2px 2px 4px #000000;
 }
-
-.header-nav {
-  margin-top: 55px;
-}
-
+.header-nav { margin-top: 55px; }
 .nav-item, .nav-item h5 {
   margin: 0 15px 0 0;
   color: white;
   text-shadow: 2px 2px 4px #000000;
   font-size: 15px;
 }
-
 @keyframes bounce {
-  0%, 50%, 100% {transform: translateY(-15px);}
-  25%, 75% {transform: translateY(15px);}
+  0%, 50%, 100% { transform: translateY(-15px); }
+  25%, 75% { transform: translateY(15px); }
 }
 
 .intro {
@@ -46,14 +37,12 @@ html {
   color: white;
   text-shadow: 2px 2px 4px #000000;
 }
-
 .intro h2 {
   font-size: 20px;
   border-bottom: 2px solid #04b163;
   animation: fadeIn 2.25s;
   width: 80%;
 }
-
 .underline {
   display: none;
   width: 1px;
@@ -61,52 +50,40 @@ html {
   animation: increase 2s, fadeIn 2.25s;
   animation-fill-mode: forwards;
 }
-
 @keyframes increase {
-    100% {
-        width: 20%;
-    }
+    100% { width: 20%; }
 }
-
 @keyframes fadeIn {
-  0% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 1;
-  }
+  0% { opacity: 0; }
+  100% { opacity: 1; }
 }
 
 .main-section {
   background-image: url('./Assets/Images/green1_background.png');
   background-size: contain;
 }
-
 .main-section a {
   width: 100%;
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
 }
-
 .arrow-wrapper svg {
-  height: 70px;
-  width: 70px;
+  height: 50px;
+  width: 50px;
   margin: 0 auto 70px auto;
   padding-top: 20px;
   animation: bounce 2s linear 0s infinite normal;
 }
-
 .profile-photo {
   width: 60%;
   margin: 0 auto 70px auto;
+  box-shadow: 0 2px 5px 0 rgba(0,0,0,0.2), 0 2px 10px 0 rgba(0,0,0,0.3);
 }
-
 .about-me {
   width: 80%;
   padding-top: 60px;
 }
-
 .about-me-body {
   margin: 0 auto 50px auto;
   width: 70%;
@@ -114,165 +91,202 @@ html {
   background-color: #076db1;
   font-size: 14px;
   padding: 1rem;
+  box-shadow: 0 2px 5px 0 rgba(0,0,0,0.2), 0 2px 10px 0 rgba(0,0,0,0.3);
 }
-
-.about-me-body h3 {
-  text-shadow: 2px 2px 4px #000000;
-}
-
-.tech-icons svg {
-  margin: 20px 20px 20px 0;
-  width: 40px;
-  height: 40px;
-}
-
-.react-icon {
-  background-color: black;
-  fill: #61DAFB;
-}
-
-.js-icon {
-  background-color: black;
-  fill: #F7DF1E
-}
-
-.html-icon {
-  fill: #E34F26;
-  background-color: white;
-}
-
-.css-icon {
-  fill: white;
-  background-color: #076db1;
-}
-.jquery-icon {
-  fill: #0769AD;
-  background-color: white;
-}
-
+.about-me-body h3 { text-shadow: 2px 2px 4px #000000 }
 .line {
   width: 85%;
   background-color: white;
   height: 2px;
+  margin-top: 50px;
 }
 
-.project-wrapper {
+.skills {
   flex-wrap: wrap;
+  text-align: center;
+  padding-bottom: 50px;
+  width: 70%;
+  box-shadow: 0 2px 5px 0 rgba(0,0,0,0.2), 0 2px 10px 0 rgba(0,0,0,0.3);
+  background-color: #e7e7e7;
+  border-radius: 4px;
+  max-height: 700px;
 }
+.skills h3 {
+  width: 100%;
+  text-shadow: 2px 2px 4px #000000;
+  color: white;
+  margin: 0 auto 30px auto;
+  border-bottom: 1px solid white;
+  padding-bottom: 20px;
+  padding-top: 30px;
+  background-color: #3bb578;
+}
+.skills svg {
+  margin: 20px 10px 10px 10px;
+  width: 50px;
+  height: 50px;
+  position: absolute;
+  transition: 0.5s ease;
+  backface-visibility: hidden;
+  display: block;
+  opacity: 1;
+}
+.skills-items {
+  font-size: 18px;
+  flex-wrap: wrap;
+  background-color: #ffffff;
+  box-shadow: 0 2px 5px 0 rgba(0,0,0,0.16);
+  padding: 0px 20px 40px 20px;
+  width: 80%;
+  max-height: 450px;
+}
+.row {
+  max-width: 95vw;
+}
+.react {
+  background-color: black;
+  fill: #61DAFB;
+}
+.javascript {
+  background-color: black;
+  fill: #F7DF1E
+}
+.html {
+  fill: #E34F26;
+  background-color: white;
+}
+.css {
+  fill: #076db1;
+  background-color: white;
+}
+.jquery {
+  fill: #0769AD;
+  background-color: white;
+}
+.bootstrap { fill: #563D7C; }
+.overlay {
+  background-color: black;
+  opacity: 0;
+  position: absolute;
+  transition: 0.5s ease;
+  width: 70%;
+  height: 70%;
+  color: white;
+  font-size: 16px;
+  text-align: center;
+}
+.tech-icons {
+  width: 100%;
+  height: 100%;
+  padding: 30px;
+}
+
+.tech-icons:hover .tech-icons:active {
+  width: 50%;
+  opacity: 0.3;
+  animation: expand 0.7s infinite;
+}
+.tech-icons:hover > .overlay {
+  opacity: 0.8;
+}
+@keyframes expand {
+  0% {width: 50%;}
+  100% {width: 60%;}
+}
+
+.project-wrapper { flex-wrap: wrap; }
 
 .projects {
   color: white;
   padding-top: 30px;
   text-shadow: 5px 4px 8px #000;
 }
-
-.projects > h3 {
-  margin-bottom: 50px;
-}
-
-.project-tabs a {
-  color: #672f63;
-  text-shadow: 5px 4px 8px #888888;
-}
-
-.project-tabs a:hover{
-  color: #de3553;
-}
-
+.projects > h3 { margin-bottom: 50px; }
 .jumbotron {
   margin-bottom: 0!important;
   padding-bottom: 0!important;
 }
-
-.jumbotron > svg:hover {
-  fill: white;
-}
-
 .mediaGroup {
   flex-wrap: wrap;
   padding-top: 20px;
   height: 500px;
 }
-
 .mediaGroup a {
   display: flex;
   justify-content: center;
 }
-
 .laptop {
   width: 90vw;
   height: 64vw;
   z-index: 1;
   position: absolute;
 }
-
 .project-thumbnail {
   width: 70vw;
   margin-top: 13px;
   margin-bottom: 50px;
   height: 52vw;
 }
-
-.inactive-project {
-  animation: slide-left 0.55s;
-}
-
-.active-project {
-  animation: slide-right 0.55s;
-}
-
+.inactive-project { animation: slide-left 0.55s; }
+.active-project { animation: slide-right 0.55s; }
 @keyframes slide-left {
   0% {opacity: 1;}
   100% {transform: translateX(-1000px); opacity: 0;}
 }
-
 @keyframes slide-right {
   0% {opacity: 0; transform: translateX(-500px);}
   100% {transform: translateX(0); opacity: 1;}
 }
-
 .nav-arrow {
   margin-top: 10px;
   margin-right: 5%;
 }
-
 .nav-arrow button {
   background: none;
   border: none;
+  fill: #30aa77;
 }
-
-.project-text {
-  height: 230px;
-}
-
+.nav-arrow > button:hover { fill: white; }
+.project-text { height: 230px; }
 .project-text h4 {
   color: white;
   text-shadow: 5px 4px 8px black;
 }
 
-.row {
-  width: 100%;
+.footer {
+  .row { width: 100%; }
+  .social-icons { width: 100%; }
+  .social-icons svg {
+    margin: 0 20px 0 0;
+    width: 40px;
+    height: 40px;
+  }
 }
 
-.social-icons {
-  width: 100%;
-}
-
-.social-icons svg {
-  margin: 0 20px 0 0;
-  width: 40px;
-  height: 40px;
+@media only screen and (min-width: 0px) and (max-width: 418px) {
+  .col-4 {
+    max-width: 75px!important;
+    padding-left: 0!important;
+    padding-right: 0!important;
+  }
+  .skills-items {
+    font-size: 12px;
+    padding: 10px;
+  }
+  .skills svg {
+    width: 30px;
+    height: 30px;
+  }
 }
 
 @media only screen and (min-width: 450px) and (max-width: 575px) {
-  .mediaGroup {
-    height: auto;
+  .skills-items { font-size: 12px; }
+  .skills svg {
+    width: 30px;
+    height: 30px;
   }
-
-  .laptop {
-    height: 58vw;
-  }
-
+  .mediaGroup { height: auto; }
+  .laptop { height: 58vw; }
   .project-thumbnail {
     height: 48vw;
     margin-top: 20px;
@@ -281,32 +295,23 @@ html {
 }
 
 @media only screen and (min-width: 576px) and (max-width: 766px) {
-  .logo h1 {
-    font-size: 18px;
+  .logo h1 { font-size: 18px; }
+  .nav-item h5 { font-size: 18px; }
+  .skills-items { font-size: 14px; }
+  .col-4 {
+    max-width: 100px!important;
   }
-
-  .mediaGroup {
-    height: auto;
-  }
-
-  .mediaGroup a {
-    width: 100%;
-  }
-
+  .mediaGroup { height: auto; }
+  .mediaGroup a { width: 100%; }
   .laptop {
     width: 80vw;
     height: 50vw;
   }
-
   .project-thumbnail {
     width: 62vw;
     height: 42vw;
     margin-top: 20px;
     margin-bottom: 70px;
-  }
-
-  .nav-item h5 {
-    font-size: 18px;
   }
 }
 
@@ -315,75 +320,45 @@ html {
     margin-left: 25px;
     margin-top: 50px;
   }
-
-  .logo h1 {
-    font-size: 20px;
-  }
-
-  .nav {
-    margin-left: auto;
-  }
-
-  .nav-item a {
-    padding-top: 0;
-  }
-
-  .nav-item h5 {
-    font-size: 20px;
-  }
-
+  .logo h1 { font-size: 20px; }
+  .nav { margin-left: auto; }
+  .nav-item a { padding-top: 0; }
+  .nav-item h5 { font-size: 20px; }
   .intro h2 {
     font-size: 20px;
     width: 45%;
   }
-
-  .underline {
-    height: 27px;
-  }
-
-  .arrow-down {
-    margin-top: 40px;
-  }
-
-  .profile-photo {
-    width: 50%;
-  }
-
+  .underline { height: 27px; }
+  .arrow-down { margin-top: 40px; }
+  .profile-photo { width: 50%; }
   .about-me-body {
     padding: 2rem;
     font-size: 18px;
   }
-
-  .mediaGroup {
-    height: auto;
+  .col-4 {
+    padding: 30px;
+    max-width: 130px!important;
   }
-
-  .mediaGroup a {
-    width: 100%;
-  }
-
+  .mediaGroup { height: auto; }
+  .mediaGroup a { width: 100%; }
   .laptop {
     width: 80vw;
     height: 48vw;
   }
-
   .project-thumbnail {
     width: 62vw;
     height: 40vw;
     margin-top: 30px;
     margin-bottom: 70px;
   }
-
   .project-text {
     font-size: 20px;
     padding: 1rem;
   }
-
   .project-text h4 {
     font-size: 28px;
     margin-bottom: 30px;
   }
-
   .nav-arrow {
     margin-top: 50px;
     margin-left: 20px;
@@ -395,102 +370,64 @@ html {
     margin-left: 25px;
     margin-top: 50px;
   }
-
-  .logo h1 {
-    font-size: 20px;
-  }
-
-  .nav {
-    margin-left: auto;
-  }
-
-  .nav-item a {
-    padding-top: 0;
-  }
-
-  .nav-item h5 {
-    font-size: 20px;
-  }
-
-  .intro {
-    height: 450px;
-  }
-
+  .logo h1 { font-size: 20px; }
+  .nav { margin-left: auto; }
+  .nav-item a { padding-top: 0; }
+  .nav-item h5 { font-size: 20px; }
+  .intro { height: 450px; }
   .intro h2 {
     font-size: 26px;
     border-bottom: 2px solid #04b163;
     animation: fadeIn 2.25s;
     width: 60%;
   }
-
   .underline {
     display: block;
     height: 32px;
   }
-
   @keyframes increase {
-      100% {
-          width: 10%;
-      }
+    100% { width: 10%; }
   }
-
   .line {
     background-color: black;
     margin-bottom: 150px;
   }
-
-  .arrow-down {
-    margin-top: 40px;
-  }
-
-  .profile-photo {
-    width: 50%;
-  }
-
-  .about-me {
-    width: 50%;
-  }
-
+  .arrow-down { margin-top: 40px; }
+  .profile-photo { width: 50%; }
+  .about-me { width: 50%; }
   .about-me-body {
     padding: 2rem;
     font-size: 18px;
     margin-bottom: 150px;
   }
-
-  .mediaGroup {
+  .skills svg {
+    width: 40%;
     height: auto;
   }
-
-  .mediaGroup a {
-    width: 100%;
+  .col-4 {
+    padding: 40px;
   }
-
-  .projects h3 {
-    font-size: 40px;
-  }
-
+  .mediaGroup { height: auto; }
+  .mediaGroup a { width: 100%; }
+  .projects h3 { font-size: 40px; }
   .laptop {
     max-width: 58vw;
     height: auto;
   }
-
   .project-thumbnail {
     max-width: 46vw;
     height: 28vw;
     margin-top: 26px;
     margin-bottom: 70px;
   }
-
   .project-text {
     font-size: 20px;
     padding: 1rem;
   }
-
   .project-text h4 {
     font-size: 28px;
     margin-bottom: 30px;
   }
-
   .nav-arrow {
     margin-top: 50px;
     margin-left: 20px;
@@ -502,103 +439,69 @@ html {
     margin-left: 25px;
     margin-top: 50px;
   }
-
-  .logo h1 {
-    font-size: 24px;
-  }
-
-  .nav {
-    margin-left: auto;
-  }
-
-  .nav-item a {
-    padding-top: 0;
-  }
-
-  .nav-item h5 {
-    font-size: 20px;
-  }
-
-  .intro {
-    height: 650px;
-  }
-
+  .logo h1 { font-size: 24px; }
+  .nav { margin-left: auto; }
+  .nav-item a { padding-top: 0; }
+  .nav-item h5 { font-size: 20px; }
+  .intro { height: 650px; }
   .intro h2 {
     font-size: 36px;
     width: 60%;
   }
-
   .underline {
     display: block;
     height: 45px;
   }
-
   @keyframes increase {
-      100% {
-          width: 10%;
-      }
+    100% { width: 10%; }
   }
-
   .line {
     background-color: black;
     margin-bottom: 150px;
   }
-
   .arrow-down {
     margin-top: 40px;
     width: 50px;
     height: 50px;
   }
-
-  .profile-photo {
-    width: 50%;
-  }
-
-  .about-me {
-    width: 50%;
-  }
-
+  .profile-photo { width: 50%; }
+  .about-me { width: 50%; }
   .about-me-body {
     padding: 2rem;
     font-size: 18px;
     margin-bottom: 150px;
   }
-
+  .skills svg {
+    width: 40%;
+    height: auto;
+  }
+  .col-4 {
+    padding: 50px;
+  }
   .mediaGroup {
     height: auto;
     margin-left: 0;
   }
-
-  .mediaGroup a {
-    width: 100%;
-  }
-
-  .projects h3 {
-    font-size: 40px;
-  }
-
+  .mediaGroup a { width: 100%; }
+  .projects h3 { font-size: 40px; }
   .laptop {
     width: 58vw;
     height: auto;
   }
-
   .project-thumbnail {
     width: 46vw;
     height: 29vw;
     margin-top: 26px;
     margin-bottom: 70px;
   }
-
   .project-text {
     font-size: 20px;
     padding: 1rem;
   }
-
   .project-text h4 {
     font-size: 28px;
     margin-bottom: 30px;
   }
-
   .nav-arrow {
     margin-top: 50px;
     margin-left: 20px;
@@ -610,65 +513,47 @@ html {
     margin-left: 25px;
     margin-top: 50px;
   }
-
-  .logo h1 {
-    font-size: 34px;
-  }
-
-  .nav {
-    margin-left: auto;
-  }
-
-  .nav-item a {
-    padding-top: 0;
-  }
-
-  .nav-item h5 {
-    font-size: 20px;
-  }
-
-  .intro {
-    height: 650px;
-  }
-
+  .logo h1 { font-size: 34px; }
+  .nav { margin-left: auto; }
+  .nav-item a { padding-top: 0; }
+  .nav-item h5 { font-size: 20px; }
+  .intro { height: 650px; }
   .intro h2 {
     font-size: 36px;
     width: 50%;
   }
-
   .arrow-down {
     margin-top: 40px;
     width: 50px;
     height: 50px;
   }
-
   .about-me {
     padding-top: 150px;
     width: 40%;
   }
-
-  .about-me-body h3 {
-    font-size: 35px;
-  }
-
+  .about-me-body h3 { font-size: 35px; }
   .about-me .profile-photo {
     margin-left: -8%;
     width: 20%;
     z-index: 1;
     position: absolute;
   }
-
+  .skills svg {
+    width: 30%;
+    height: auto;
+  }
+  .col-4 {
+    padding: 50px;
+  }
   .line {
     background-color: black;
     margin-bottom: 150px;
   }
-
   .media {
     width: 130%;
     margin-top: 15%;
     padding-bottom: 10%;
   }
-
   .about-me-body {
     padding: 2rem;
     font-size: 22px;
@@ -677,60 +562,41 @@ html {
     height: 100%;
     margin-right: 10%;
   }
-
   .tech-icons svg {
     width: 70px;
     height: 70px;
   }
-
   .underline {
     display: block;
     height: 45px;
   }
-
-  .projects h3 {
-    font-size: 40px;
-  }
-
-  .jumbo-wrapper{
-    width: 100%;
-  }
-
+  .projects h3 { font-size: 40px; }
+  .jumbo-wrapper { width: 100%; }
   .mediaGroup {
     height: auto;
     margin-left: 0;
     width: 100%;
     margin-top: 5%;
   }
-
-  .mediaGroup a {
-    width: 45%;
-  }
-
+  .mediaGroup a { width: 45%; }
   .laptop {
     width: 33vw;
     max-width: 700px;
     height: 25vw;
   }
-
   .project-thumbnail {
     width: 26vw;
     height: 21vw;
     margin-top: 26px;
     margin-bottom: 70px;
   }
-
   .project-text {
     font-size: 20px;
     padding: 1rem;
   }
-
   .project-text h4 {
     font-size: 28px;
     margin-bottom: 30px;
   }
-
-  .footer div {
-    height: auto;
-  }
+  .footer div { height: auto; }
 }
