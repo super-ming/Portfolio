@@ -1,19 +1,19 @@
 self.__precacheManifest = [
   {
-    "revision": "fe87edc417df714941357d886008e9a0",
-    "url": "/Portfolio/static/media/green1_background.fe87edc4.png"
+    "revision": "54486431946122e22ac2bf58f2a7a4a1",
+    "url": "/Portfolio/static/media/ming.54486431.jpg"
   },
   {
-    "revision": "86695eb0e62e41f7b6d4",
-    "url": "/Portfolio/static/css/main.7f84db12.chunk.css"
+    "revision": "72bfd3da88a865325e3d",
+    "url": "/Portfolio/static/css/main.944e9f42.chunk.css"
   },
   {
     "revision": "900a59b80c5dadc5786607ddf6b5c251",
     "url": "/Portfolio/static/media/arrowdown.900a59b8.svg"
   },
   {
-    "revision": "3f3cea48246d267ae83a",
-    "url": "/Portfolio/static/js/1.3f3cea48.chunk.js"
+    "revision": "18de059db617bac2cd1b",
+    "url": "/Portfolio/static/js/1.18de059d.chunk.js"
   },
   {
     "revision": "3b96116072eb85f5a3a2",
@@ -44,16 +44,24 @@ self.__precacheManifest = [
     "url": "/Portfolio/static/media/laptop_frame.8347f35e.png"
   },
   {
-    "revision": "54486431946122e22ac2bf58f2a7a4a1",
-    "url": "/Portfolio/static/media/ming.54486431.jpg"
+    "revision": "c90ec52348cfb397329d82faf1bdeb63",
+    "url": "/Portfolio/static/media/techevents.c90ec523.JPG"
   },
   {
-    "revision": "86695eb0e62e41f7b6d4",
-    "url": "/Portfolio/static/js/main.86695eb0.chunk.js"
+    "revision": "a0c6935d927bd88f1fde8ed87e4988e6",
+    "url": "/Portfolio/static/media/awsom.a0c6935d.JPG"
+  },
+  {
+    "revision": "72bfd3da88a865325e3d",
+    "url": "/Portfolio/static/js/main.72bfd3da.chunk.js"
   },
   {
     "revision": "df988b613fb8523d77bf015f63245975",
     "url": "/Portfolio/static/media/intro.df988b61.jpeg"
+  },
+  {
+    "revision": "fe87edc417df714941357d886008e9a0",
+    "url": "/Portfolio/static/media/green1_background.fe87edc4.png"
   },
   {
     "revision": "d9eafe58bd418f27bf19043b89046ca0",
@@ -88,11 +96,11 @@ self.__precacheManifest = [
     "url": "/Portfolio/static/media/linkedin.619231ff.svg"
   },
   {
-    "revision": "3f3cea48246d267ae83a",
-    "url": "/Portfolio/static/css/1.d5806691.chunk.css"
+    "revision": "18de059db617bac2cd1b",
+    "url": "/Portfolio/static/css/1.90d2f823.chunk.css"
   },
   {
-    "revision": "301540962a680c14dd179cc62e6194ff",
+    "revision": "48fd07b6575eb9176eb21c4a658b964f",
     "url": "/Portfolio/index.html"
   }
 ];
