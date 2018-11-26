@@ -69,8 +69,8 @@ html { scroll-behavior: smooth; }
   flex-wrap: wrap;
 }
 .arrow-wrapper svg {
-  height: 50px;
-  width: 50px;
+  height: 60px;
+  width: 60px;
   margin: 0 auto 70px auto;
   padding-top: 20px;
   animation: bounce 2s linear 0s infinite normal;
@@ -94,6 +94,9 @@ html { scroll-behavior: smooth; }
   box-shadow: 0 2px 5px 0 rgba(0,0,0,0.2), 0 2px 10px 0 rgba(0,0,0,0.3);
 }
 .about-me-body h3 { text-shadow: 2px 2px 4px #000000 }
+.about-me-body p {
+  padding: 10px;
+}
 .line {
   width: 85%;
   background-color: white;
@@ -105,7 +108,7 @@ html { scroll-behavior: smooth; }
   flex-wrap: wrap;
   text-align: center;
   padding-bottom: 50px;
-  width: 70%;
+  width: 100%;
   box-shadow: 0 2px 5px 0 rgba(0,0,0,0.2), 0 2px 10px 0 rgba(0,0,0,0.3);
   background-color: #e7e7e7;
   border-radius: 4px;
@@ -135,9 +138,7 @@ html { scroll-behavior: smooth; }
   width: 80%;
   height: 400px;
 }
-.row {
-  max-width: 95vw;
-}
+.row { max-width: 95vw; }
 .react-icon {
   background-color: black;
   fill: #61DAFB;
@@ -159,12 +160,9 @@ html { scroll-behavior: smooth; }
   background-color: white;
 }
 .bootstrap-icon { fill: #563D7C; }
-.skills-items svg:hover  {
-  width: 50%;
-}
+.skills-items svg:hover  { width: 50%; }
 
 .project-wrapper { flex-wrap: wrap; }
-
 .projects {
   color: white;
   padding-top: 30px;
@@ -179,7 +177,7 @@ html { scroll-behavior: smooth; }
 .mediaGroup {
   flex-wrap: wrap;
   padding-top: 20px;
-  height: 500px;
+  height: 100vh;
 }
 .mediaGroup a {
   display: flex;
@@ -237,15 +235,21 @@ html { scroll-behavior: smooth; }
   background-color: #1f3f54;
 }
 
-@media only screen and (min-width: 0px) and (max-width: 418px) {
+@media only screen and (min-width: 0px) and (max-width: 449px) {
+  .arrow-down svg {
+    width: 50px;
+    height: 50px;
+  }
   .col-4 {
     max-width: 75px!important;
     padding-left: 0!important;
     padding-right: 0!important;
+    height: 50px;
   }
   .skills-items {
     font-size: 12px;
     padding: 10px;
+    height: 200px;
   }
   .skills svg {
     width: 30px;
@@ -254,7 +258,15 @@ html { scroll-behavior: smooth; }
 }
 
 @media only screen and (min-width: 450px) and (max-width: 575px) {
-  .skills-items { font-size: 12px; }
+  .arrow-down svg {
+    width: 50px;
+    height: 50px;
+  }
+  .skills-items {
+    font-size: 12px;
+    height: auto;
+    padding-bottom: 30px;
+  }
   .skills svg {
     width: 30px;
     height: 30px;
@@ -271,10 +283,16 @@ html { scroll-behavior: smooth; }
 @media only screen and (min-width: 576px) and (max-width: 766px) {
   .logo h1 { font-size: 18px; }
   .nav-item h5 { font-size: 18px; }
-  .skills-items { font-size: 14px; }
-  .col-4 {
-    max-width: 100px!important;
+  .arrow-down svg {
+    width: 50px;
+    height: 50px;
   }
+  .skills-items {
+    font-size: 14px;
+    height: auto;
+    padding-bottom: 30px;
+  }
+  .col-4 { max-width: 100px!important; }
   .mediaGroup { height: auto; }
   .mediaGroup a { width: 100%; }
   .laptop {
@@ -287,6 +305,7 @@ html { scroll-behavior: smooth; }
     margin-top: 20px;
     margin-bottom: 70px;
   }
+  .project-links { padding-top: 15px; }
 }
 
 @media only screen and (min-width: 767px) and (max-width: 900px) {
@@ -304,6 +323,10 @@ html { scroll-behavior: smooth; }
   }
   .underline { height: 27px; }
   .arrow-down { margin-top: 40px; }
+  .arrow-down svg {
+    width: 70px;
+    height: 70px;
+  }
   .profile-photo { width: 50%; }
   .about-me-body {
     padding: 2rem;
@@ -359,14 +382,16 @@ html { scroll-behavior: smooth; }
     display: block;
     height: 32px;
   }
-  @keyframes increase {
-    100% { width: 10%; }
+  @keyframes increase { 100% { width: 10%; } }
+  .arrow-down {
+    margin-top: 40px;
+    height: 70px;
+    width: 70px;
   }
-  .line {
-    background-color: black;
-    margin-bottom: 150px;
+  .arrow-down svg {
+    width: 70px;
+    height: 70px;
   }
-  .arrow-down { margin-top: 40px; }
   .profile-photo { width: 50%; }
   .about-me { width: 50%; }
   .about-me-body {
@@ -378,8 +403,10 @@ html { scroll-behavior: smooth; }
     width: 40%;
     height: auto;
   }
-  .col-4 {
-    padding: 40px;
+  .col-4 { padding: 40px; }
+  .line {
+    margin-top: 100px;
+    margin-bottom: 100px;
   }
   .mediaGroup { height: auto; }
   .mediaGroup a { width: 100%; }
@@ -402,6 +429,8 @@ html { scroll-behavior: smooth; }
     font-size: 28px;
     margin-bottom: 30px;
   }
+  .project-text p { padding-left: 50px; }
+  .project-links { padding-top: 15px; }
   .nav-arrow {
     margin-top: 50px;
     margin-left: 20px;
@@ -426,17 +455,16 @@ html { scroll-behavior: smooth; }
     display: block;
     height: 45px;
   }
-  @keyframes increase {
-    100% { width: 10%; }
-  }
+  .line { margin-top: 150px; }
+  @keyframes increase { 100% { width: 10%; } }
   .line {
-    background-color: black;
+    margin-top: 150px;
     margin-bottom: 150px;
   }
-  .arrow-down {
-    margin-top: 40px;
-    width: 50px;
-    height: 50px;
+  .arrow-down { margin-top: 40px; }
+  .arrow-down svg {
+    width: 70px;
+    height: 70px;
   }
   .profile-photo { width: 50%; }
   .about-me { width: 50%; }
@@ -449,9 +477,7 @@ html { scroll-behavior: smooth; }
     width: 40%;
     height: auto;
   }
-  .col-4 {
-    padding: 50px;
-  }
+  .col-4 { padding: 50px; }
   .mediaGroup {
     height: auto;
     margin-left: 0;
@@ -476,6 +502,8 @@ html { scroll-behavior: smooth; }
     font-size: 28px;
     margin-bottom: 30px;
   }
+  .project-text p { padding-left: 50px; }
+  .project-links { padding-top: 15px; }
   .nav-arrow {
     margin-top: 50px;
     margin-left: 20px;
@@ -498,8 +526,8 @@ html { scroll-behavior: smooth; }
   }
   .arrow-down {
     margin-top: 40px;
-    width: 50px;
-    height: 50px;
+    width: 70px;
+    height: 70px;
   }
   .about-me {
     padding-top: 150px;
@@ -512,16 +540,15 @@ html { scroll-behavior: smooth; }
     z-index: 1;
     position: absolute;
   }
+  .skills-items { height: auto; }
   .skills svg {
     width: 30%;
     height: auto;
   }
-  .col-4 {
-    padding: 50px;
-  }
+  .col-4 { padding: 50px; }
   .line {
-    background-color: black;
-    margin-bottom: 150px;
+    margin-bottom: 200px;
+    margin-top: 200px;
   }
   .media {
     width: 130%;
@@ -572,5 +599,7 @@ html { scroll-behavior: smooth; }
     font-size: 28px;
     margin-bottom: 30px;
   }
+  .project-text p { padding-left: 50px; }
+  .project-links { padding-top: 15px; }
   .footer div { height: auto; }
 }

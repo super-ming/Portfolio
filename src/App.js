@@ -39,7 +39,7 @@ class App extends Component {
         </section>
         <main className="main-section ml-auto mr-auto">
           <a className="arrow-wrapper" href="#about-me">
-            <ArrowDown alt="down arrow for skipping to about me section" className="arrow-down"/>
+            <ArrowDown alt="Skipping to about me section" className="arrow-down"/>
           </a>
           <AboutMe />
           <Skills/>
