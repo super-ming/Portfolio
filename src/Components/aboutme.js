@@ -9,7 +9,7 @@ const aboutMe = (props) => {
       <Media>
         <Media.Body className="about-me-body">
           <h3>About Me</h3>
-          <p>Hi! As a web developer, I strive to create solutions for problems that matter to others. I enjoy making things that people find useful.
+          <p>Hi! As a front end developer, I strive to create beautiful, user focused solutions with obsession to details. I enjoy making applications that people find useful.
              I love learning about new things. You can also ask me anything travel related as I enjoy travelling and new experiences.
              Check out my projects below!
           </p>
