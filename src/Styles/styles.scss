@@ -126,8 +126,8 @@ html { scroll-behavior: smooth; }
 }
 .skills svg {
   margin: 20px 10px 0px 10px;
-  width: 50px;
-  height: 50px;
+  width: 45px;
+  height: 45px;
 }
 .skills-items {
   font-size: 18px;
@@ -160,7 +160,7 @@ html { scroll-behavior: smooth; }
   background-color: white;
 }
 .bootstrap-icon { fill: #563D7C; }
-.skills-items svg:hover  { width: 50%; }
+.skills-items svg:hover  { width: 40%; }
 
 .project-wrapper { flex-wrap: wrap; }
 .projects {
@@ -220,6 +220,10 @@ html { scroll-behavior: smooth; }
   color: white;
   text-shadow: 5px 4px 8px black;
 }
+.project-text p:nth-child(3) {
+  font-weight: bold;
+  text-decoration: underline;
+}
 
 .footer {
   .row { width: 100%; }
@@ -255,6 +259,8 @@ html { scroll-behavior: smooth; }
     width: 30px;
     height: 30px;
   }
+  .jumbotron { height: 140vh; }
+  .mediaGroup { height: auto; }
 }
 
 @media only screen and (min-width: 450px) and (max-width: 575px) {
@@ -271,6 +277,7 @@ html { scroll-behavior: smooth; }
     width: 30px;
     height: 30px;
   }
+  .jumbotron { height: 90vh; }
   .mediaGroup { height: auto; }
   .laptop { height: 58vw; }
   .project-thumbnail {
@@ -293,6 +300,7 @@ html { scroll-behavior: smooth; }
     padding-bottom: 30px;
   }
   .col-4 { max-width: 100px!important; }
+  .jumbotron { height: 100vh; }
   .mediaGroup { height: auto; }
   .mediaGroup a { width: 100%; }
   .laptop {
@@ -336,6 +344,7 @@ html { scroll-behavior: smooth; }
     padding: 30px;
     max-width: 130px!important;
   }
+  .jumbotron { height: 120vh; }
   .mediaGroup { height: auto; }
   .mediaGroup a { width: 100%; }
   .laptop {
@@ -400,7 +409,7 @@ html { scroll-behavior: smooth; }
     margin-bottom: 150px;
   }
   .skills svg {
-    width: 40%;
+    width: 30%;
     height: auto;
   }
   .col-4 { padding: 40px; }
@@ -408,6 +417,7 @@ html { scroll-behavior: smooth; }
     margin-top: 100px;
     margin-bottom: 100px;
   }
+  .jumbotron { height: 120vh; }
   .mediaGroup { height: auto; }
   .mediaGroup a { width: 100%; }
   .projects h3 { font-size: 40px; }
@@ -474,7 +484,7 @@ html { scroll-behavior: smooth; }
     margin-bottom: 150px;
   }
   .skills svg {
-    width: 40%;
+    width: 20%;
     height: auto;
   }
   .col-4 { padding: 50px; }
@@ -482,6 +492,7 @@ html { scroll-behavior: smooth; }
     height: auto;
     margin-left: 0;
   }
+  .jumbotron { height: 120vh; }
   .mediaGroup a { width: 100%; }
   .projects h3 { font-size: 40px; }
   .laptop {
@@ -542,7 +553,7 @@ html { scroll-behavior: smooth; }
   }
   .skills-items { height: auto; }
   .skills svg {
-    width: 30%;
+    width: 20%;
     height: auto;
   }
   .col-4 { padding: 50px; }
