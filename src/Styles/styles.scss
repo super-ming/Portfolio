@@ -177,7 +177,7 @@ html { scroll-behavior: smooth; }
 .mediaGroup {
   flex-wrap: wrap;
   padding-top: 20px;
-  height: 100vh;
+  height: 120vh;
 }
 .mediaGroup a {
   display: flex;
@@ -277,7 +277,7 @@ html { scroll-behavior: smooth; }
     width: 30px;
     height: 30px;
   }
-  .jumbotron { height: 90vh; }
+  .jumbotron { height: 140vh; }
   .mediaGroup { height: auto; }
   .laptop { height: 58vw; }
   .project-thumbnail {
@@ -300,7 +300,7 @@ html { scroll-behavior: smooth; }
     padding-bottom: 30px;
   }
   .col-4 { max-width: 100px!important; }
-  .jumbotron { height: 100vh; }
+  .jumbotron { height: 150vh; }
   .mediaGroup { height: auto; }
   .mediaGroup a { width: 100%; }
   .laptop {
@@ -344,7 +344,7 @@ html { scroll-behavior: smooth; }
     padding: 30px;
     max-width: 130px!important;
   }
-  .jumbotron { height: 120vh; }
+  .jumbotron { height: 175vh; }
   .mediaGroup { height: auto; }
   .mediaGroup a { width: 100%; }
   .laptop {
@@ -417,7 +417,7 @@ html { scroll-behavior: smooth; }
     margin-top: 100px;
     margin-bottom: 100px;
   }
-  .jumbotron { height: 120vh; }
+  .jumbotron { height: 160vh; }
   .mediaGroup { height: auto; }
   .mediaGroup a { width: 100%; }
   .projects h3 { font-size: 40px; }
@@ -492,7 +492,7 @@ html { scroll-behavior: smooth; }
     height: auto;
     margin-left: 0;
   }
-  .jumbotron { height: 120vh; }
+  .jumbotron { height: 160vh; }
   .mediaGroup a { width: 100%; }
   .projects h3 { font-size: 40px; }
   .laptop {
