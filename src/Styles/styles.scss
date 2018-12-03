@@ -22,6 +22,14 @@ html { scroll-behavior: smooth; }
   color: white;
   text-shadow: 2px 2px 4px #000000;
   font-size: 15px;
+  position: relative;
+}
+.project-nav { animation: slide-top 2.25s; }
+.blog { animation: slide-top 2.5s; }
+.about-nav { animation: slide-top 2.75s; }
+@keyframes slide-top {
+  0% {transform: translateY(-1000px); opacity: 0;}
+  100% {transform: translateY(0); opacity: 1}
 }
 @keyframes bounce {
   0%, 50%, 100% { transform: translateY(-15px); }
@@ -279,9 +287,13 @@ html { scroll-behavior: smooth; }
   }
   .jumbotron { height: 110vh; }
   .mediaGroup { height: auto; }
-  .laptop { height: 58vw; }
+  .laptop {
+    height: 50vw;
+    width: 60vw;
+  }
   .project-thumbnail {
-    height: 48vw;
+    height: 40vw;
+    width: 47vw;
     margin-top: 20px;
     margin-bottom: 70px;
   }
@@ -300,16 +312,16 @@ html { scroll-behavior: smooth; }
     padding-bottom: 30px;
   }
   .col-4 { max-width: 100px!important; }
-  .jumbotron { height: 120vh; }
+  .jumbotron { height: 110vh; }
   .mediaGroup { height: auto; }
   .mediaGroup a { width: 100%; }
   .laptop {
-    width: 80vw;
-    height: 50vw;
+    width: 50vw;
+    height: 40vw;
   }
   .project-thumbnail {
-    width: 62vw;
-    height: 42vw;
+    width: 40vw;
+    height: 32vw;
     margin-top: 20px;
     margin-bottom: 70px;
   }
@@ -344,17 +356,17 @@ html { scroll-behavior: smooth; }
     padding: 30px;
     max-width: 130px!important;
   }
-  .jumbotron { height: 140vh; }
+  .jumbotron { height: 130vh; }
   .mediaGroup { height: auto; }
   .mediaGroup a { width: 100%; }
   .laptop {
-    width: 80vw;
-    height: 48vw;
+    width: 50vw;
+    height: 40vw;
   }
   .project-thumbnail {
-    width: 62vw;
-    height: 40vw;
-    margin-top: 30px;
+    width: 39vw;
+    height: 32vw;
+    margin-top: 25px;
     margin-bottom: 70px;
   }
   .project-text {
@@ -417,18 +429,18 @@ html { scroll-behavior: smooth; }
     margin-top: 100px;
     margin-bottom: 100px;
   }
-  .jumbotron { height: 130vh; }
+  .jumbotron { height: 120vh; }
   .mediaGroup { height: auto; }
   .mediaGroup a { width: 100%; }
   .projects h3 { font-size: 40px; }
   .laptop {
-    max-width: 58vw;
+    max-width: 45vw;
     height: auto;
   }
   .project-thumbnail {
-    max-width: 46vw;
-    height: 28vw;
-    margin-top: 26px;
+    max-width: 35vw;
+    height: 21vw;
+    margin-top: 20px;
     margin-bottom: 70px;
   }
   .project-text {
@@ -492,16 +504,16 @@ html { scroll-behavior: smooth; }
     height: auto;
     margin-left: 0;
   }
-  .jumbotron { height: 140vh; }
+  .jumbotron { height: 130vh; }
   .mediaGroup a { width: 100%; }
   .projects h3 { font-size: 40px; }
   .laptop {
-    width: 58vw;
+    width: 45vw;
     height: auto;
   }
   .project-thumbnail {
-    width: 46vw;
-    height: 29vw;
+    width: 35vw;
+    height: 24vw;
     margin-top: 26px;
     margin-bottom: 70px;
   }
