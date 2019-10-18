@@ -6,6 +6,10 @@ import FeedReader from '../../Assets/Images/feedreader.JPG';
 import SingaporeMap from '../../Assets/Images/singaporemap.JPG';
 import Frogger from '../../Assets/Images/frogger.JPG';
 import MemoryGame from '../../Assets/Images/memorygame.JPG';
+import TechEvents from '../Assets/Images/techevents.JPG';
+import Awsom from '../Assets/Images/awsom.JPG';
+import Voluntech from '../Assets/Images/voluntech.jpg';
+import Kachingu from '../Assets/Images/kachingu.jpg';
 import Menu from '../project_menu';
 
 describe('project_menu tests', () => {
@@ -35,11 +39,15 @@ describe('project_menu tests', () => {
 
   it('right arrow button renders next project item when clicked ', () => {
     const projects = [
-      {title: "Singapore Restaurants", href:"https://agile-beyond-13723.herokuapp.com/", src: SingaporeMap, tools: ['React', 'JavaScript', 'Html5', 'Css3', 'Facebook'], text:"This application uses React, Facebook Graph API, and Google Maps API to display restaurants in central Singapore."},
-      {title: "Cat Clicker", href:"https://super-ming.github.io/Cat-Clicker/", src: CatClicker, tools: ['JavaScript', 'Html5', 'Css3'], text:"Cat clicking application. Click if you dare."},
-      {title: "Feed Reader", href:"https://super-ming.github.io/frontend-nanodegree-feedreader/", tools: ['JavaScript', 'Html5', 'Css3'], src: FeedReader, text:"Application that provides a live feed of pages from various websites."},
-      {title: "Frogger Game", href:"https://super-ming.github.io/frontend-nanodegree-arcade-game/", tools: ['JavaScript', 'Html5', 'Css3'], src: Frogger, text:"This is a classic arcade game created with JavaScript, HTML, and CSS."},
-      {title: "Memory Card Game", href:"https://super-ming.github.io/Memory-Card/", src: MemoryGame, tools: ['JavaScript', 'Html5', 'Css3'], text:"This is a memory game created with JavaScript, HTML, and CSS."}
+      {title: "Seattle Voluntech", href:"https://seattlevoluntech.sfo2.digitaloceanspaces.com/index.html#/", src: Voluntech, sourceCode: "https://github.com/super-ming/seattlevoluntech", skills: ['React', 'JavaScript', 'HTML5', 'CSS3', 'Mobile First Responsive Design', 'REST APIs'], text:"This platform aims to connect small business owners in Seattle who need technical with volunteers who can provide the skills and time."},
+        {title: "Kachingu", href:"https://kachingu1.herokuapp.com/", src: Kachingu, sourceCode: "https://github.com/super-ming/v8-bears-team-13", skills: ['React', 'JavaScript', 'HTML5', 'CSS3', 'Mobile First Responsive Design', 'REST APIs', 'Postgresql', 'Sass'], text:"Kachingu is an income and expense tracking application."},
+        {title: "Singapore Restaurants", href:"https://singapore-restaurants.herokuapp.com/", src: SingaporeMap, sourceCode: "https://github.com/super-ming/Singapore-Neighborhood-Map", skills: ['React', 'JavaScript', 'HTML5', 'CSS3', 'Mobile First Responsive Design', 'REST APIs'], text:"This application uses React, Facebook Graph API, and Google Maps API to display restaurants in central Singapore."},
+        {title: "AWSOM", href:"https://awsom.herokuapp.com/", src: Awsom, sourceCode: "https://github.com/super-ming/awsom-front-end", skills: ['React', 'JavaScript', 'HTML5', 'CSS3'], text:"Redesigned existing homepage for Awsom.info, as a part of Community Hack Night initiative launch at CodeFellows."},
+        {title: "What is the Next Tech Event in Seattle?", href:"https://gwgtechevents.github.io/team_seattle/", src: TechEvents, sourceCode: "https://github.com/super-ming/Udacity_calendar_team", skills: ['JavaScript', 'HTML5', 'CSS3'], text:"I created the idea of building an web application to display upcoming tech events in the Seattle area and collaborated with fellow classmates."},
+        {title: "Memory Card Game", href:"https://super-ming.github.io/Memory-Card/", src: MemoryGame, sourceCode: "https://github.com/super-ming/Memory-Card", skills: ['JavaScript', 'HTMl5', 'CSS3'], text:"Memory game created with JavaScript, HTML, and CSS."},
+        {title: "Feed Reader", href:"https://super-ming.github.io/frontend-nanodegree-feedreader/", sourceCode: "https://github.com/super-ming/frontend-nanodegree-feedreader", skills: ['JavaScript', 'Jasmine', 'HTML5', 'CSS3'], src: FeedReader, text:"Application that provides a live feed of pages from various websites."},
+        {title: "Frogger Game", href:"https://super-ming.github.io/frontend-nanodegree-arcade-game/", sourceCode: "https://github.com/super-ming/frontend-nanodegree-arcade-game", skills: ['JavaScript', 'HTML5', 'CSS3', 'Canvas'], src: Frogger, text:"Classic arcade game created with JavaScript, HTML, and CSS."},
+        {title: "Cat Clicker", href:"https://super-ming.github.io/Cat-Clicker/", src: CatClicker, sourceCode: "https://github.com/super-ming/Cat-Clicker", skills: ['JavaScript', 'HTML5', 'CSS3'], text:"Cat clicking application. Click if you dare."}
     ];
     const wrapper = mount(<Menu />, { attachTo: document.body });
     //console.log(wrapper.debug());
@@ -63,11 +71,15 @@ describe('project_menu tests', () => {
 
   it('left arrow button renders previous project item when clicked ', () => {
     const projects = [
-      {title: "Singapore Restaurants", href:"https://agile-beyond-13723.herokuapp.com/", src: SingaporeMap, tools: ['React', 'JavaScript', 'Html5', 'Css3', 'Facebook'], text:"This application uses React, Facebook Graph API, and Google Maps API to display restaurants in central Singapore."},
-      {title: "Cat Clicker", href:"https://super-ming.github.io/Cat-Clicker/", src: CatClicker, tools: ['JavaScript', 'Html5', 'Css3'], text:"Cat clicking application. Click if you dare."},
-      {title: "Feed Reader", href:"https://super-ming.github.io/frontend-nanodegree-feedreader/", tools: ['JavaScript', 'Html5', 'Css3'], src: FeedReader, text:"Application that provides a live feed of pages from various websites."},
-      {title: "Frogger Game", href:"https://super-ming.github.io/frontend-nanodegree-arcade-game/", tools: ['JavaScript', 'Html5', 'Css3'], src: Frogger, text:"This is a classic arcade game created with JavaScript, HTML, and CSS."},
-      {title: "Memory Card Game", href:"https://super-ming.github.io/Memory-Card/", src: MemoryGame, tools: ['JavaScript', 'Html5', 'Css3'], text:"This is a memory game created with JavaScript, HTML, and CSS."}
+      {title: "Seattle Voluntech", href:"https://seattlevoluntech.sfo2.digitaloceanspaces.com/index.html#/", src: Voluntech, sourceCode: "https://github.com/super-ming/seattlevoluntech", skills: ['React', 'JavaScript', 'HTML5', 'CSS3', 'Mobile First Responsive Design', 'REST APIs'], text:"This platform aims to connect small business owners in Seattle who need technical with volunteers who can provide the skills and time."},
+        {title: "Kachingu", href:"https://kachingu1.herokuapp.com/", src: Kachingu, sourceCode: "https://github.com/super-ming/v8-bears-team-13", skills: ['React', 'JavaScript', 'HTML5', 'CSS3', 'Mobile First Responsive Design', 'REST APIs', 'Postgresql', 'Sass'], text:"Kachingu is an income and expense tracking application."},
+        {title: "Singapore Restaurants", href:"https://singapore-restaurants.herokuapp.com/", src: SingaporeMap, sourceCode: "https://github.com/super-ming/Singapore-Neighborhood-Map", skills: ['React', 'JavaScript', 'HTML5', 'CSS3', 'Mobile First Responsive Design', 'REST APIs'], text:"This application uses React, Facebook Graph API, and Google Maps API to display restaurants in central Singapore."},
+        {title: "AWSOM", href:"https://awsom.herokuapp.com/", src: Awsom, sourceCode: "https://github.com/super-ming/awsom-front-end", skills: ['React', 'JavaScript', 'HTML5', 'CSS3'], text:"Redesigned existing homepage for Awsom.info, as a part of Community Hack Night initiative launch at CodeFellows."},
+        {title: "What is the Next Tech Event in Seattle?", href:"https://gwgtechevents.github.io/team_seattle/", src: TechEvents, sourceCode: "https://github.com/super-ming/Udacity_calendar_team", skills: ['JavaScript', 'HTML5', 'CSS3'], text:"I created the idea of building an web application to display upcoming tech events in the Seattle area and collaborated with fellow classmates."},
+        {title: "Memory Card Game", href:"https://super-ming.github.io/Memory-Card/", src: MemoryGame, sourceCode: "https://github.com/super-ming/Memory-Card", skills: ['JavaScript', 'HTMl5', 'CSS3'], text:"Memory game created with JavaScript, HTML, and CSS."},
+        {title: "Feed Reader", href:"https://super-ming.github.io/frontend-nanodegree-feedreader/", sourceCode: "https://github.com/super-ming/frontend-nanodegree-feedreader", skills: ['JavaScript', 'Jasmine', 'HTML5', 'CSS3'], src: FeedReader, text:"Application that provides a live feed of pages from various websites."},
+        {title: "Frogger Game", href:"https://super-ming.github.io/frontend-nanodegree-arcade-game/", sourceCode: "https://github.com/super-ming/frontend-nanodegree-arcade-game", skills: ['JavaScript', 'HTML5', 'CSS3', 'Canvas'], src: Frogger, text:"Classic arcade game created with JavaScript, HTML, and CSS."},
+        {title: "Cat Clicker", href:"https://super-ming.github.io/Cat-Clicker/", src: CatClicker, sourceCode: "https://github.com/super-ming/Cat-Clicker", skills: ['JavaScript', 'HTML5', 'CSS3'], text:"Cat clicking application. Click if you dare."}
     ];
     const wrapper = mount(<Menu />, { attachTo: document.body });
     expect(wrapper.find('div.mediaGroup').childAt(0).props().href).toEqual(projects[0].href);

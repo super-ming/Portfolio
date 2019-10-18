@@ -146,7 +146,9 @@ html { scroll-behavior: smooth; }
   width: 80%;
   height: 400px;
 }
-.row { max-width: 95vw; }
+.row { 
+  max-width: 95vw; 
+}
 .react-icon {
   background-color: black;
   fill: #61DAFB;
@@ -225,7 +227,7 @@ html { scroll-behavior: smooth; }
 .nav-arrow > button:hover { fill: white; }
 .project-text { height: 230px; }
 .project-text h4 {
-  color: white;
+  color: black;
   text-shadow: 5px 4px 8px black;
 }
 .project-text p:nth-child(3) {
@@ -352,9 +354,10 @@ html { scroll-behavior: smooth; }
     padding: 2rem;
     font-size: 18px;
   }
-  .col-4 {
+  .col-3 {
     padding: 30px;
     max-width: 130px!important;
+    height: auto;
   }
   .jumbotron { height: 130vh; }
   .mediaGroup { height: auto; }
@@ -495,6 +498,9 @@ html { scroll-behavior: smooth; }
     font-size: 18px;
     margin-bottom: 150px;
   }
+  .skills {
+
+  }
   .skills svg {
     width: 20%;
     height: auto;
@@ -563,7 +569,10 @@ html { scroll-behavior: smooth; }
     z-index: 1;
     position: absolute;
   }
-  .skills-items { height: auto; }
+  .skills-items { 
+    height: auto; 
+    padding-bottom: 10px;
+  }
   .skills svg {
     width: 20%;
     height: auto;

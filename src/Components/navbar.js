@@ -15,7 +15,7 @@ class NavBar extends Component {
 
   render() {
     return (
-      <Navbar fixed="top" className="header-navbar" expand={"md"}>
+      <Navbar fixed="top" className="header-navbar">
         <Navbar.Brand href="#" className="logo"><h1>MH</h1></Navbar.Brand>
         <div className="nav d-flex navlink">
           <Nav className="header-nav">

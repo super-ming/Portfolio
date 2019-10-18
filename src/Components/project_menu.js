@@ -8,12 +8,16 @@ import MemoryGame from '../Assets/Images/memorygame.JPG';
 import Laptop from '../Assets/Images/laptop_frame.png';
 import TechEvents from '../Assets/Images/techevents.JPG';
 import Awsom from '../Assets/Images/awsom.JPG';
+import Voluntech from '../Assets/Images/voluntech.jpg';
+import Kachingu from '../Assets/Images/kachingu.jpg';
 
 class Menu extends Component {
   constructor(props){
     super(props)
     this.state = {
       projects: [
+        {title: "Seattle Voluntech", href:"https://seattlevoluntech.sfo2.digitaloceanspaces.com/index.html#/", src: Voluntech, sourceCode: "https://github.com/super-ming/seattlevoluntech", skills: ['React', 'JavaScript', 'HTML5', 'CSS3', 'Mobile First Responsive Design', 'REST APIs'], text:"This platform aims to connect small business owners in Seattle who need technical with volunteers who can provide the skills and time."},
+        {title: "Kachingu", href:"https://kachingu1.herokuapp.com/", src: Kachingu, sourceCode: "https://github.com/super-ming/v8-bears-team-13", skills: ['React', 'JavaScript', 'HTML5', 'CSS3', 'Mobile First Responsive Design', 'REST APIs', 'Postgresql', 'Sass'], text:"Kachingu is an income and expense tracking application."},
         {title: "Singapore Restaurants", href:"https://singapore-restaurants.herokuapp.com/", src: SingaporeMap, sourceCode: "https://github.com/super-ming/Singapore-Neighborhood-Map", skills: ['React', 'JavaScript', 'HTML5', 'CSS3', 'Mobile First Responsive Design', 'REST APIs'], text:"This application uses React, Facebook Graph API, and Google Maps API to display restaurants in central Singapore."},
         {title: "AWSOM", href:"https://awsom.herokuapp.com/", src: Awsom, sourceCode: "https://github.com/super-ming/awsom-front-end", skills: ['React', 'JavaScript', 'HTML5', 'CSS3'], text:"Redesigned existing homepage for Awsom.info, as a part of Community Hack Night initiative launch at CodeFellows."},
         {title: "What is the Next Tech Event in Seattle?", href:"https://gwgtechevents.github.io/team_seattle/", src: TechEvents, sourceCode: "https://github.com/super-ming/Udacity_calendar_team", skills: ['JavaScript', 'HTML5', 'CSS3'], text:"I created the idea of building an web application to display upcoming tech events in the Seattle area and collaborated with fellow classmates."},
