@@ -1,23 +1,27 @@
 self.__precacheManifest = [
   {
-    "revision": "54486431946122e22ac2bf58f2a7a4a1",
-    "url": "/Portfolio/static/media/ming.54486431.jpg"
+    "revision": "9fd999a8a3f06465bd867af50a5a38ae",
+    "url": "/Portfolio/static/media/healthstack.9fd999a8.gif"
   },
   {
-    "revision": "00187d60e9831301c514",
-    "url": "/Portfolio/static/css/main.ecff8669.chunk.css"
+    "revision": "68aecc6b3fcb5b0da766",
+    "url": "/Portfolio/static/css/main.abc5d7c7.chunk.css"
   },
   {
     "revision": "900a59b80c5dadc5786607ddf6b5c251",
     "url": "/Portfolio/static/media/arrowdown.900a59b8.svg"
   },
   {
-    "revision": "09bdc038712885d4d411",
-    "url": "/Portfolio/static/js/1.09bdc038.chunk.js"
+    "revision": "ffdbf4d1bfda505b5d1a",
+    "url": "/Portfolio/static/js/1.ffdbf4d1.chunk.js"
   },
   {
     "revision": "3b96116072eb85f5a3a2",
     "url": "/Portfolio/static/js/runtime~main.3b961160.js"
+  },
+  {
+    "revision": "8347f35e4ebf7c450195e403dcf8854d",
+    "url": "/Portfolio/static/media/laptop_frame.8347f35e.png"
   },
   {
     "revision": "82fff6c661457813698cbbd52177a640",
@@ -40,10 +44,6 @@ self.__precacheManifest = [
     "url": "/Portfolio/static/media/memorygame.f1ef2938.JPG"
   },
   {
-    "revision": "8347f35e4ebf7c450195e403dcf8854d",
-    "url": "/Portfolio/static/media/laptop_frame.8347f35e.png"
-  },
-  {
     "revision": "c90ec52348cfb397329d82faf1bdeb63",
     "url": "/Portfolio/static/media/techevents.c90ec523.JPG"
   },
@@ -60,16 +60,20 @@ self.__precacheManifest = [
     "url": "/Portfolio/static/media/kachingu.c2dcaea8.jpg"
   },
   {
-    "revision": "00187d60e9831301c514",
-    "url": "/Portfolio/static/js/main.00187d60.chunk.js"
+    "revision": "68aecc6b3fcb5b0da766",
+    "url": "/Portfolio/static/js/main.68aecc6b.chunk.js"
   },
   {
-    "revision": "df988b613fb8523d77bf015f63245975",
-    "url": "/Portfolio/static/media/intro.df988b61.jpeg"
+    "revision": "54486431946122e22ac2bf58f2a7a4a1",
+    "url": "/Portfolio/static/media/ming.54486431.jpg"
   },
   {
     "revision": "fe87edc417df714941357d886008e9a0",
     "url": "/Portfolio/static/media/green1_background.fe87edc4.png"
+  },
+  {
+    "revision": "df988b613fb8523d77bf015f63245975",
+    "url": "/Portfolio/static/media/intro.df988b61.jpeg"
   },
   {
     "revision": "d9eafe58bd418f27bf19043b89046ca0",
@@ -112,11 +116,11 @@ self.__precacheManifest = [
     "url": "/Portfolio/static/media/linkedin.619231ff.svg"
   },
   {
-    "revision": "09bdc038712885d4d411",
-    "url": "/Portfolio/static/css/1.98e825ce.chunk.css"
+    "revision": "ffdbf4d1bfda505b5d1a",
+    "url": "/Portfolio/static/css/1.30849f2e.chunk.css"
   },
   {
-    "revision": "02e7b15e0593e8dbe945a8fbeb6f09b9",
+    "revision": "e11132d72c71fdf24915946975590881",
     "url": "/Portfolio/index.html"
   }
 ];
