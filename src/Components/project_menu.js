@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import React, { Component, Fragment } from 'react';
 import { Jumbotron, Media } from 'react-bootstrap';
 import CatClicker from '../Assets/Images/catclicker.JPG';
 import FeedReader from '../Assets/Images/feedreader.JPG';
@@ -10,12 +10,14 @@ import TechEvents from '../Assets/Images/techevents.JPG';
 import Awsom from '../Assets/Images/awsom.JPG';
 import Voluntech from '../Assets/Images/voluntech.jpg';
 import Kachingu from '../Assets/Images/kachingu.jpg';
+import Healthstack from '../Assets/Images/healthstack.jpg';
 
 class Menu extends Component {
   constructor(props){
     super(props)
     this.state = {
       projects: [
+        {title: "Healthstack", href:"", src: Healthstack, sourceCode: "", skills: ['React', 'JavaScript', 'Redux', 'AWS', 'Charts.js', 'TailwindCSS' ], text:"I built a prototype for a pre-funding healthcare startup using React and Redux to showcase product features. The application features patient dashboards and management of patient communication using AWS services. The startup is currently in stealth mode, so the link and source code is unavailable at this time."},
         {title: "Seattle Voluntech", href:"https://seattlevoluntech.sfo2.digitaloceanspaces.com/index.html#/", src: Voluntech, sourceCode: "https://github.com/super-ming/seattlevoluntech", skills: ['React', 'JavaScript', 'HTML5', 'CSS3', 'Mobile First Responsive Design', 'REST APIs'], text:"This platform aims to connect small business owners in Seattle who need technical with volunteers who can provide the skills and time."},
         {title: "Kachingu", href:"https://kachingu1.herokuapp.com/", src: Kachingu, sourceCode: "https://github.com/super-ming/v8-bears-team-13", skills: ['React', 'JavaScript', 'HTML5', 'CSS3', 'Mobile First Responsive Design', 'REST APIs', 'Postgresql', 'Sass'], text:"Kachingu is an income and expense tracking application."},
         {title: "Singapore Restaurants", href:"https://singapore-restaurants.herokuapp.com/", src: SingaporeMap, sourceCode: "https://github.com/super-ming/Singapore-Neighborhood-Map", skills: ['React', 'JavaScript', 'HTML5', 'CSS3', 'Mobile First Responsive Design', 'REST APIs'], text:"This application uses React, Facebook Graph API, and Google Maps API to display restaurants in central Singapore."},
@@ -78,12 +80,22 @@ class Menu extends Component {
         <div className="jumbo-wrapper">
           <Jumbotron>
             <Media className="d-flex justify-content-center mediaGroup">
+            {projects[activeKey].title === "Healthstack" ?
+              <a href={projects[activeKey].href} style={{pointerEvents: 'none', cursor: 'default'}}>
+                <img className="laptop" alt="laptop frame" src={Laptop} />
+                <img className="project-thumbnail"
+                   alt={projects[activeKey].title}
+                   src={projects[activeKey].src} 
+                   />
+              </a>
+              :
               <a href={projects[activeKey].href}>
                 <img className="laptop" alt="laptop frame" src={Laptop} />
                 <img className="project-thumbnail"
                      alt={projects[activeKey].title}
                      src={projects[activeKey].src} />
               </a>
+            }
               <div className="d-flex justify-content-center nav-arrow">
                 <button className="arrow-left" alt="Back arrow for previous project" onClick={this.backArrowSelect}>{backwardArrow}</button>
               </div>
@@ -93,8 +105,17 @@ class Menu extends Component {
                 <p>Skills: </p>
                 <p>{projects[activeKey].skills.join(', ')}</p>
                 <div className="project-links d-flex justify-content-center">
-                  <a href={projects[activeKey].href}>[ Demo ]</a>
-                  <a href={projects[activeKey].sourceCode}>[ Source Code ]</a>
+                  {projects[activeKey].title === "Healthstack" ?
+                    <Fragment>
+                      <p>[ Demo ]</p>
+                      <p>[ Source Code ]</p>
+                    </Fragment> 
+                    :
+                    <Fragment>
+                      <a href={projects[activeKey].href}>[ Demo ]</a>
+                      <a href={projects[activeKey].sourceCode}>[ Source Code ]</a>
+                    </Fragment>
+                  }
                 </div>
               </Media.Body>
               <div className="d-flex justify-content-center nav-arrow">
