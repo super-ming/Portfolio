@@ -10,7 +10,7 @@ import TechEvents from '../Assets/Images/techevents.JPG';
 import Awsom from '../Assets/Images/awsom.JPG';
 import Voluntech from '../Assets/Images/voluntech.jpg';
 import Kachingu from '../Assets/Images/kachingu.jpg';
-import Healthstack from '../Assets/Images/healthstack.jpg';
+import Healthstack from '../Assets/Images/healthstack.gif';
 
 class Menu extends Component {
   constructor(props){
@@ -107,8 +107,8 @@ class Menu extends Component {
                 <div className="project-links d-flex justify-content-center">
                   {projects[activeKey].title === "Healthstack" ?
                     <Fragment>
-                      <p>[ Demo ]</p>
-                      <p>[ Source Code ]</p>
+                      <p style={{color: '#807e7e', fontStyle: 'italic'}}>[ Demo ]</p>
+                      <p style={{color: '#807e7e', fontStyle: 'italic'}}>[ Source Code ]</p>
                     </Fragment> 
                     :
                     <Fragment>
