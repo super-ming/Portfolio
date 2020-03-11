@@ -4,16 +4,16 @@ self.__precacheManifest = [
     "url": "/Portfolio/static/media/healthstack.9fd999a8.gif"
   },
   {
-    "revision": "68aecc6b3fcb5b0da766",
-    "url": "/Portfolio/static/css/main.abc5d7c7.chunk.css"
+    "revision": "1ef31d3cb9f98b794c40",
+    "url": "/Portfolio/static/css/main.9357ddba.chunk.css"
   },
   {
     "revision": "900a59b80c5dadc5786607ddf6b5c251",
     "url": "/Portfolio/static/media/arrowdown.900a59b8.svg"
   },
   {
-    "revision": "ffdbf4d1bfda505b5d1a",
-    "url": "/Portfolio/static/js/1.ffdbf4d1.chunk.js"
+    "revision": "bb059f35d670af3dab3f",
+    "url": "/Portfolio/static/js/1.bb059f35.chunk.js"
   },
   {
     "revision": "3b96116072eb85f5a3a2",
@@ -60,8 +60,8 @@ self.__precacheManifest = [
     "url": "/Portfolio/static/media/kachingu.c2dcaea8.jpg"
   },
   {
-    "revision": "68aecc6b3fcb5b0da766",
-    "url": "/Portfolio/static/js/main.68aecc6b.chunk.js"
+    "revision": "1ef31d3cb9f98b794c40",
+    "url": "/Portfolio/static/js/main.1ef31d3c.chunk.js"
   },
   {
     "revision": "54486431946122e22ac2bf58f2a7a4a1",
@@ -116,11 +116,11 @@ self.__precacheManifest = [
     "url": "/Portfolio/static/media/linkedin.619231ff.svg"
   },
   {
-    "revision": "ffdbf4d1bfda505b5d1a",
-    "url": "/Portfolio/static/css/1.30849f2e.chunk.css"
+    "revision": "bb059f35d670af3dab3f",
+    "url": "/Portfolio/static/css/1.ed7646ac.chunk.css"
   },
   {
-    "revision": "e11132d72c71fdf24915946975590881",
+    "revision": "64b0c54e3e192edb9aa7a399757226c8",
     "url": "/Portfolio/index.html"
   }
 ];
