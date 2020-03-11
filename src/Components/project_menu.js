@@ -17,7 +17,7 @@ class Menu extends Component {
     super(props)
     this.state = {
       projects: [
-        {title: "Healthstack", href:"", src: Healthstack, sourceCode: "", skills: ['React', 'JavaScript', 'Redux', 'AWS', 'Charts.js', 'TailwindCSS' ], text:"I built a prototype for a pre-funding healthcare startup using React and Redux to showcase product features. The application features patient dashboards and management of patient communication using AWS services. The startup is currently in stealth mode, so the link and source code is unavailable at this time."},
+        {title: "Healthstack", href:"https://performance1.d15rklx4cepfto.amplifyapp.com/", src: Healthstack, sourceCode: "", skills: ['React', 'JavaScript', 'Redux', 'AWS', 'Charts.js', 'TailwindCSS' ], text:"I built a prototype for a pre-funding healthcare startup using React and Redux to showcase product features. The application features patient dashboards and management of patient communication using AWS services."},
         {title: "Seattle Voluntech", href:"https://seattlevoluntech.sfo2.digitaloceanspaces.com/index.html#/", src: Voluntech, sourceCode: "https://github.com/super-ming/seattlevoluntech", skills: ['React', 'JavaScript', 'HTML5', 'CSS3', 'Mobile First Responsive Design', 'REST APIs'], text:"This platform aims to connect small business owners in Seattle who need technical with volunteers who can provide the skills and time."},
         {title: "Kachingu", href:"https://kachingu1.herokuapp.com/", src: Kachingu, sourceCode: "https://github.com/super-ming/v8-bears-team-13", skills: ['React', 'JavaScript', 'HTML5', 'CSS3', 'Mobile First Responsive Design', 'REST APIs', 'Postgresql', 'Sass'], text:"Kachingu is an income and expense tracking application."},
         {title: "Singapore Restaurants", href:"https://singapore-restaurants.herokuapp.com/", src: SingaporeMap, sourceCode: "https://github.com/super-ming/Singapore-Neighborhood-Map", skills: ['React', 'JavaScript', 'HTML5', 'CSS3', 'Mobile First Responsive Design', 'REST APIs'], text:"This application uses React, Facebook Graph API, and Google Maps API to display restaurants in central Singapore."},
@@ -107,7 +107,7 @@ class Menu extends Component {
                 <div className="project-links d-flex justify-content-center">
                   {projects[activeKey].title === "Healthstack" ?
                     <Fragment>
-                      <p style={{color: '#807e7e', fontStyle: 'italic'}}>[ Demo ]</p>
+                      <a href={projects[activeKey].href}>[ Demo ]</a>
                       <p style={{color: '#807e7e', fontStyle: 'italic'}}>[ Source Code ]</p>
                     </Fragment> 
                     :
